@@ -26,7 +26,7 @@ function SparklineCard({ countyName }) {
 
   if (loading) {
     return (
-      <Link to={`${import.meta.env.BASE_URL}county/${countyNameToSlug(countyName)}`} className="sparkline-card">
+      <Link to={`/county/${countyNameToSlug(countyName)}`} className="sparkline-card">
         <div className="sparkline-header">
           <h3>{countyName}</h3>
         </div>
@@ -97,7 +97,7 @@ function SparklineCard({ countyName }) {
   };
 
   return (
-    <Link to={`${import.meta.env.BASE_URL}county/${countyNameToSlug(countyName)}`} className="sparkline-card">
+    <Link to={`/county/${countyNameToSlug(countyName)}`} className="sparkline-card">
       <div className="sparkline-header">
         <h3>{countyName}</h3>
         {trend !== null && (

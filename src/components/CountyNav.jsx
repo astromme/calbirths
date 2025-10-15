@@ -17,12 +17,12 @@ export default function CountyNav({ currentCounty }) {
 
   return (
     <div className="county-nav">
-      <Link to={import.meta.env.BASE_URL}>All Counties</Link>
+      <Link to="/">All Counties</Link>
       <div className="county-list">
         {counties.map((county) => (
           <span key={county}>
             <Link
-              to={`${import.meta.env.BASE_URL}county/${getCountySlug(county)}`}
+              to={`/county/${getCountySlug(county)}`}
               style={{ fontWeight: currentCounty === county ? 'bold' : 'normal' }}
             >
               {county}
