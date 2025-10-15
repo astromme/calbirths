@@ -49,7 +49,8 @@ An interactive website visualizing birth data across all 58 California counties 
 │   │   └── counties.json        # List of all counties
 │   └── 404.html                 # SPA routing fallback
 ├── scripts/
-│   └── process_births.py        # Data processing script
+│   ├── process_births.py        # Data processing script
+│   └── generate-sitemap.js      # Sitemap generation script (automated)
 ├── births-data/                 # Raw CSV data from CA Dept of Public Health
 ├── vite.config.js               # Vite configuration
 └── package.json                 # Dependencies
@@ -77,8 +78,9 @@ The site is automatically deployed to GitHub Pages via GitHub Actions whenever c
 The workflow will:
 1. Process the CSV data files using `process_births.py` to generate JSON for all 58 counties
 2. Install dependencies with pnpm
-3. Build the React application with Vite
-4. Deploy the `dist/` folder to GitHub Pages
+3. Generate `sitemap.xml` from the counties data (automated)
+4. Build the React application with Vite
+5. Deploy the `dist/` folder to GitHub Pages
 
 ## Running Locally
 
@@ -105,6 +107,12 @@ To create a production build:
 
 ```bash
 pnpm build
+```
+
+This automatically generates the sitemap before building. You can also generate the sitemap separately:
+
+```bash
+pnpm generate-sitemap
 ```
 
 To preview the production build locally:
@@ -147,6 +155,24 @@ This project uses a modern React architecture to minimize code duplication:
 - **Shared Chart Components**: MonthlyChart, AnnualChart, and SeasonalityChart are reused across all pages
 - **Client-side Navigation**: React Router provides instant page transitions without full reloads
 - **User Engagement**: Integrated feedback mechanism for continuous improvement
+
+## SEO & Discoverability
+
+The site is optimized for search engines with:
+
+- **Automated Sitemap**: `sitemap.xml` is automatically generated from counties data during each build
+- **Dynamic Meta Tags**: Page titles and descriptions update for each county
+- **Structured Data**: JSON-LD schema markup for Dataset type (helps search engines understand the content)
+- **Open Graph Tags**: Optimized sharing on Facebook, LinkedIn, and other social platforms
+- **Twitter Cards**: Enhanced appearance when shared on Twitter
+- **robots.txt**: Guides search engine crawlers
+
+The sitemap is regenerated automatically whenever:
+- You run `pnpm build` (local or CI/CD)
+- Counties data is updated
+- You explicitly run `pnpm generate-sitemap`
+
+No manual updates needed!
 
 ## Future Enhancements
 
