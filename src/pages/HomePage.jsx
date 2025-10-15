@@ -3,8 +3,10 @@ import CountyNav from '../components/CountyNav';
 import MonthlyChart from '../components/MonthlyChart';
 import SeasonalityChart from '../components/SeasonalityChart';
 import AnnualChart from '../components/AnnualChart';
+import SparklineGrid from '../components/SparklineGrid';
 import FeedbackButton from '../components/FeedbackButton';
 import { loadAggregateData } from '../utils/dataLoader';
+import counties from '../../public/data/counties.json';
 
 export default function HomePage() {
   const [data, setData] = useState([]);
@@ -86,6 +88,8 @@ export default function HomePage() {
       <MonthlyChart data={data} />
       <SeasonalityChart data={data} />
       <AnnualChart data={data} />
+
+      <SparklineGrid counties={counties} />
 
       <div className="data-source">
         <div className="data-source-text">
