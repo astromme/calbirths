@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import CountyNav from '../components/CountyNav';
 import MonthlyChart from '../components/MonthlyChart';
 import AnnualChart from '../components/AnnualChart';
+import FeedbackButton from '../components/FeedbackButton';
 import { loadAggregateData } from '../utils/dataLoader';
 
 export default function HomePage() {
@@ -42,8 +43,13 @@ export default function HomePage() {
 
   return (
     <div className="container">
-      <h1>California Births Data</h1>
-      <p className="subtitle">Aggregate provisional and historical birth data from California Department of Public Health</p>
+      <div className="page-header">
+        <div className="page-header-content">
+          <h1>California Births Data</h1>
+          <p className="subtitle">Aggregate provisional and historical birth data from California Department of Public Health</p>
+        </div>
+        <FeedbackButton />
+      </div>
 
       <MonthlyChart data={data} />
       <AnnualChart data={data} />

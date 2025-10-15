@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import CountyNav from '../components/CountyNav';
 import MonthlyChart from '../components/MonthlyChart';
 import AnnualChart from '../components/AnnualChart';
+import FeedbackButton from '../components/FeedbackButton';
 import { loadCountyData, slugToCountyName } from '../utils/dataLoader';
 
 export default function CountyPage() {
@@ -50,8 +51,13 @@ export default function CountyPage() {
 
   return (
     <div className="container">
-      <h1>{countyName} Births Data</h1>
-      <p className="subtitle">Provisional and historical birth data from California Department of Public Health</p>
+      <div className="page-header">
+        <div className="page-header-content">
+          <h1>{countyName} Births Data</h1>
+          <p className="subtitle">Provisional and historical birth data from California Department of Public Health</p>
+        </div>
+        <FeedbackButton />
+      </div>
 
       <MonthlyChart data={data} />
       <AnnualChart data={data} />
