@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>San Francisco Births by Month</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            padding: 2rem;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 0.5rem;
+            font-size: 2rem;
+        }
+
+        .subtitle {
+            color: #666;
+            margin-bottom: 2rem;
+            font-size: 1rem;
+        }
+
+        .chart-container {
+            position: relative;
+            height: 500px;
+            margin-top: 2rem;
+        }
+
+        .data-source {
+            margin-top: 2rem;
+            padding: 1rem;
+            background: #f8f9fa;
+            border-radius: 8px;
+            font-size: 0.875rem;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .data-source a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        .data-source a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
+
+            .container {
+                padding: 1rem;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            .chart-container {
+                height: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>San Francisco Births by Month</h1>
+        <p class="subtitle">Provisional data showing monthly birth counts (2024-2025)</p>
+
+        <div class="chart-container">
+            <canvas id="birthsChart"></canvas>
+        </div>
+
+        <div class="data-source">
+            <strong>Data Source:</strong> California Department of Public Health, Center for Health Statistics and Informatics, Vital Statistics Branch.
+            <br>
+            <strong>Note:</strong> Provisional counts are based on records available as of August 2025 and may not represent all births that occurred during the time period.
+            Counts include births that occurred in San Francisco regardless of residence.
+        </div>
+    </div>
+
+    <script>
+        // Month labels for the x-axis
+        const monthLabels = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+
+        // Load and process the data
+        fetch('public/data/sf-births.json')
+            .then(response => response.json())
+            .then(data => {
+                // Group data by year
+                const dataByYear = {};
+                data.forEach(record => {
+                    if (!dataByYear[record.year]) {
+                        dataByYear[record.year] = new Array(12).fill(null);
+                    }
+                    // Month is 1-indexed in the data, array is 0-indexed
+                    dataByYear[record.year][record.month - 1] = record.count;
+                });
+
+                // Create datasets for each year
+                const years = Object.keys(dataByYear).sort();
+                const colors = [
+                    { border: 'rgb(102, 126, 234)', background: 'rgba(102, 126, 234, 0.1)' },
+                    { border: 'rgb(118, 75, 162)', background: 'rgba(118, 75, 162, 0.1)' },
+                    { border: 'rgb(237, 100, 166)', background: 'rgba(237, 100, 166, 0.1)' }
+                ];
+
+                const datasets = years.map((year, index) => ({
+                    label: year,
+                    data: dataByYear[year],
+                    borderColor: colors[index % colors.length].border,
+                    backgroundColor: colors[index % colors.length].background,
+                    borderWidth: 3,
+                    tension: 0.3,
+                    fill: true,
+                    pointRadius: 5,
+                    pointHoverRadius: 7,
+                    pointBackgroundColor: colors[index % colors.length].border,
+                    pointBorderColor: '#fff',
+                    pointBorderWidth: 2
+                }));
+
+                // Create the chart
+                const ctx = document.getElementById('birthsChart').getContext('2d');
+                new Chart(ctx, {
+                    type: 'line',
+                    data: {
+                        labels: monthLabels,
+                        datasets: datasets
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        interaction: {
+                            mode: 'index',
+                            intersect: false
+                        },
+                        plugins: {
+                            legend: {
+                                display: true,
+                                position: 'top',
+                                labels: {
+                                    font: {
+                                        size: 14,
+                                        weight: 'bold'
+                                    },
+                                    padding: 20,
+                                    usePointStyle: true
+                                }
+                            },
+                            tooltip: {
+                                backgroundColor: 'rgba(0, 0, 0, 0.8)',
+                                padding: 12,
+                                titleFont: {
+                                    size: 14,
+                                    weight: 'bold'
+                                },
+                                bodyFont: {
+                                    size: 13
+                                },
+                                callbacks: {
+                                    label: function(context) {
+                                        const value = context.parsed.y;
+                                        if (value === null) {
+                                            return `${context.dataset.label}: No data`;
+                                        }
+                                        return `${context.dataset.label}: ${value.toLocaleString()} births`;
+                                    }
+                                }
+                            }
+                        },
+                        scales: {
+                            x: {
+                                grid: {
+                                    display: false
+                                },
+                                ticks: {
+                                    font: {
+                                        size: 12,
+                                        weight: 'bold'
+                                    }
+                                }
+                            },
+                            y: {
+                                beginAtZero: false,
+                                suggestedMin: 600,
+                                suggestedMax: 900,
+                                grid: {
+                                    color: 'rgba(0, 0, 0, 0.05)'
+                                },
+                                ticks: {
+                                    font: {
+                                        size: 12
+                                    },
+                                    callback: function(value) {
+                                        return value.toLocaleString();
+                                    }
+                                },
+                                title: {
+                                    display: true,
+                                    text: 'Number of Births',
+                                    font: {
+                                        size: 14,
+                                        weight: 'bold'
+                                    }
+                                }
+                            }
+                        }
+                    }
+                });
+            })
+            .catch(error => {
+                console.error('Error loading birth data:', error);
+                document.querySelector('.chart-container').innerHTML =
+                    '<p style="color: red; text-align: center; padding: 2rem;">Error loading data. Please ensure the data file exists at public/data/sf-births.json</p>';
+            });
+    </script>
+</body>
+</html>
