@@ -21,6 +21,17 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'pnpm'
+
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
@@ -29,13 +40,19 @@ jobs:
       - name: Process birth data
         run: python3 scripts/process_births.py
 
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Build site
+        run: pnpm build
+
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: '.'
+          path: 'dist'
 
   deploy:
     environment:

@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
-Process California birth data to extract San Francisco births by month.
+Process California birth data to extract births by month for each county.
 Combines historical (1960-2023) and provisional (2024-2025) data.
-Outputs JSON file suitable for web visualization.
+Outputs JSON files suitable for web visualization.
 """
 
 import csv
@@ -10,12 +10,12 @@ import json
 from pathlib import Path
 from collections import defaultdict
 
-def process_sf_births_from_csv(input_csv):
+def process_county_births_from_csv(input_csv, county_name):
     """
-    Extract San Francisco births from a CSV file.
+    Extract births for a specific county from a CSV file.
 
     Filters for:
-    - County = 'San Francisco'
+    - County = county_name
     - Geography_Type = 'Occurrence'
     - Strata = 'Total Population'
     - Strata_Name = 'Total Population'
@@ -28,8 +28,8 @@ def process_sf_births_from_csv(input_csv):
         reader = csv.DictReader(f)
 
         for row in reader:
-            # Filter for San Francisco total population births
-            if (row['County'] == 'San Francisco' and
+            # Filter for specified county total population births
+            if (row['County'] == county_name and
                 row['Geography_Type'] == 'Occurrence' and
                 row['Strata'] == 'Total Population' and
                 row['Strata_Name'] == 'Total Population'):
@@ -45,41 +45,97 @@ def process_sf_births_from_csv(input_csv):
 
     return births_data
 
-def process_all_sf_births(historical_csv, provisional_csv, output_json):
+def process_all_counties(historical_csv, provisional_csv, output_dir):
     """
-    Combine historical and provisional birth data into a single JSON file.
+    Process birth data for all California counties.
+
+    Creates individual JSON files for each county and an aggregate file.
     """
-    # Process both data sources
-    print("Processing historical data (1960-2023)...")
-    historical_data = process_sf_births_from_csv(historical_csv)
-    print(f"  Found {len(historical_data)} records")
+    output_path = Path(output_dir)
+    output_path.mkdir(parents=True, exist_ok=True)
 
-    print("Processing provisional data (2024-2025)...")
-    provisional_data = process_sf_births_from_csv(provisional_csv)
-    print(f"  Found {len(provisional_data)} records")
+    # Get list of all counties from the provisional CSV
+    counties = set()
+    with open(provisional_csv, 'r', encoding='utf-8') as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            if row['Geography_Type'] == 'Occurrence':
+                counties.add(row['County'])
 
-    # Combine and sort
-    all_births_data = historical_data + provisional_data
-    all_births_data.sort(key=lambda x: (x['year'], x['month']))
+    counties = sorted(list(counties))
+    print(f"Found {len(counties)} counties")
 
-    # Write to JSON
-    output_path = Path(output_json)
-    output_path.parent.mkdir(parents=True, exist_ok=True)
+    # Process each county
+    all_data = {}
+    for county in counties:
+        print(f"\nProcessing {county}...")
 
-    with open(output_json, 'w', encoding='utf-8') as f:
-        json.dump(all_births_data, f, indent=2)
+        # Process historical data
+        print("  Processing historical data (1960-2023)...")
+        historical_data = process_county_births_from_csv(historical_csv, county)
+        print(f"    Found {len(historical_data)} records")
 
-    print(f"\nTotal records: {len(all_births_data)}")
-    print(f"Date range: {all_births_data[0]['year']}-{all_births_data[0]['month']:02d} to {all_births_data[-1]['year']}-{all_births_data[-1]['month']:02d}")
-    print(f"Output written to: {output_json}")
+        # Process provisional data
+        print("  Processing provisional data (2024-2025)...")
+        provisional_data = process_county_births_from_csv(provisional_csv, county)
+        print(f"    Found {len(provisional_data)} records")
 
-    return all_births_data
+        # Combine and sort
+        county_data = historical_data + provisional_data
+        county_data.sort(key=lambda x: (x['year'], x['month']))
+
+        # Store for aggregate
+        all_data[county] = county_data
+
+        # Write individual county file
+        county_filename = county.lower().replace(' ', '-') + '-births.json'
+        county_path = output_path / county_filename
+        with open(county_path, 'w', encoding='utf-8') as f:
+            json.dump(county_data, f, indent=2)
+
+        if county_data:
+            print(f"  Date range: {county_data[0]['year']}-{county_data[0]['month']:02d} to {county_data[-1]['year']}-{county_data[-1]['month']:02d}")
+        print(f"  Output written to: {county_path}")
+
+    # Create aggregate data (sum of all counties by year/month)
+    print("\n\nCreating aggregate data...")
+    aggregate_data = defaultdict(lambda: defaultdict(int))
+
+    for county, data in all_data.items():
+        for record in data:
+            key = (record['year'], record['month'])
+            aggregate_data[key]['count'] += record['count']
+            aggregate_data[key]['year'] = record['year']
+            aggregate_data[key]['month'] = record['month']
+
+    # Convert to list and sort
+    aggregate_list = [
+        {'year': data['year'], 'month': data['month'], 'count': data['count']}
+        for key, data in aggregate_data.items()
+    ]
+    aggregate_list.sort(key=lambda x: (x['year'], x['month']))
+
+    # Write aggregate file
+    aggregate_path = output_path / 'california-total-births.json'
+    with open(aggregate_path, 'w', encoding='utf-8') as f:
+        json.dump(aggregate_list, f, indent=2)
+
+    print(f"Aggregate data written to: {aggregate_path}")
+    print(f"Total records: {len(aggregate_list)}")
+
+    # Create county list file for the frontend
+    county_list_path = output_path / 'counties.json'
+    with open(county_list_path, 'w', encoding='utf-8') as f:
+        json.dump(counties, f, indent=2)
+    print(f"County list written to: {county_list_path}")
+
+    return all_data
 
 if __name__ == '__main__':
     # Paths relative to project root
     project_root = Path(__file__).parent.parent
     historical_csv = project_root / 'births-data' / '1960-2023-final-births-by-month-by-county.csv'
     provisional_csv = project_root / 'births-data' / '2024-2025-provisional-births-by-month-by-county.csv'
-    output_json = project_root / 'public' / 'data' / 'sf-births.json'
+    output_dir = project_root / 'public' / 'data'
 
-    process_all_sf_births(historical_csv, provisional_csv, output_json)
+    process_all_counties(historical_csv, provisional_csv, output_dir)

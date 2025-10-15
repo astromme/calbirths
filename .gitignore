@@ -11,8 +11,18 @@ __pycache__/
 venv/
 ENV/
 
+# Node.js / pnpm
+node_modules/
+dist/
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
 # IDE
 .vscode/
 .idea/
 *.swp
 *.swo
+
+# Backup files
+*.old

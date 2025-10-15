@@ -1,0 +1,3937 @@
+[
+  {
+    "year": 1960,
+    "month": 1,
+    "count": 102
+  },
+  {
+    "year": 1960,
+    "month": 2,
+    "count": 88
+  },
+  {
+    "year": 1960,
+    "month": 3,
+    "count": 132
+  },
+  {
+    "year": 1960,
+    "month": 4,
+    "count": 103
+  },
+  {
+    "year": 1960,
+    "month": 5,
+    "count": 118
+  },
+  {
+    "year": 1960,
+    "month": 6,
+    "count": 100
+  },
+  {
+    "year": 1960,
+    "month": 7,
+    "count": 135
+  },
+  {
+    "year": 1960,
+    "month": 8,
+    "count": 137
+  },
+  {
+    "year": 1960,
+    "month": 9,
+    "count": 141
+  },
+  {
+    "year": 1960,
+    "month": 10,
+    "count": 122
+  },
+  {
+    "year": 1960,
+    "month": 11,
+    "count": 107
+  },
+  {
+    "year": 1960,
+    "month": 12,
+    "count": 103
+  },
+  {
+    "year": 1961,
+    "month": 1,
+    "count": 127
+  },
+  {
+    "year": 1961,
+    "month": 2,
+    "count": 89
+  },
+  {
+    "year": 1961,
+    "month": 3,
+    "count": 118
+  },
+  {
+    "year": 1961,
+    "month": 4,
+    "count": 111
+  },
+  {
+    "year": 1961,
+    "month": 5,
+    "count": 102
+  },
+  {
+    "year": 1961,
+    "month": 6,
+    "count": 110
+  },
+  {
+    "year": 1961,
+    "month": 7,
+    "count": 124
+  },
+  {
+    "year": 1961,
+    "month": 8,
+    "count": 137
+  },
+  {
+    "year": 1961,
+    "month": 9,
+    "count": 138
+  },
+  {
+    "year": 1961,
+    "month": 10,
+    "count": 124
+  },
+  {
+    "year": 1961,
+    "month": 11,
+    "count": 118
+  },
+  {
+    "year": 1961,
+    "month": 12,
+    "count": 113
+  },
+  {
+    "year": 1962,
+    "month": 1,
+    "count": 121
+  },
+  {
+    "year": 1962,
+    "month": 2,
+    "count": 112
+  },
+  {
+    "year": 1962,
+    "month": 3,
+    "count": 113
+  },
+  {
+    "year": 1962,
+    "month": 4,
+    "count": 104
+  },
+  {
+    "year": 1962,
+    "month": 5,
+    "count": 108
+  },
+  {
+    "year": 1962,
+    "month": 6,
+    "count": 105
+  },
+  {
+    "year": 1962,
+    "month": 7,
+    "count": 140
+  },
+  {
+    "year": 1962,
+    "month": 8,
+    "count": 140
+  },
+  {
+    "year": 1962,
+    "month": 9,
+    "count": 136
+  },
+  {
+    "year": 1962,
+    "month": 10,
+    "count": 140
+  },
+  {
+    "year": 1962,
+    "month": 11,
+    "count": 113
+  },
+  {
+    "year": 1962,
+    "month": 12,
+    "count": 140
+  },
+  {
+    "year": 1963,
+    "month": 1,
+    "count": 107
+  },
+  {
+    "year": 1963,
+    "month": 2,
+    "count": 86
+  },
+  {
+    "year": 1963,
+    "month": 3,
+    "count": 117
+  },
+  {
+    "year": 1963,
+    "month": 4,
+    "count": 114
+  },
+  {
+    "year": 1963,
+    "month": 5,
+    "count": 123
+  },
+  {
+    "year": 1963,
+    "month": 6,
+    "count": 112
+  },
+  {
+    "year": 1963,
+    "month": 7,
+    "count": 119
+  },
+  {
+    "year": 1963,
+    "month": 8,
+    "count": 135
+  },
+  {
+    "year": 1963,
+    "month": 9,
+    "count": 114
+  },
+  {
+    "year": 1963,
+    "month": 10,
+    "count": 113
+  },
+  {
+    "year": 1963,
+    "month": 11,
+    "count": 104
+  },
+  {
+    "year": 1963,
+    "month": 12,
+    "count": 126
+  },
+  {
+    "year": 1964,
+    "month": 1,
+    "count": 98
+  },
+  {
+    "year": 1964,
+    "month": 2,
+    "count": 131
+  },
+  {
+    "year": 1964,
+    "month": 3,
+    "count": 131
+  },
+  {
+    "year": 1964,
+    "month": 4,
+    "count": 122
+  },
+  {
+    "year": 1964,
+    "month": 5,
+    "count": 118
+  },
+  {
+    "year": 1964,
+    "month": 6,
+    "count": 123
+  },
+  {
+    "year": 1964,
+    "month": 7,
+    "count": 124
+  },
+  {
+    "year": 1964,
+    "month": 8,
+    "count": 121
+  },
+  {
+    "year": 1964,
+    "month": 9,
+    "count": 129
+  },
+  {
+    "year": 1964,
+    "month": 10,
+    "count": 105
+  },
+  {
+    "year": 1964,
+    "month": 11,
+    "count": 98
+  },
+  {
+    "year": 1964,
+    "month": 12,
+    "count": 131
+  },
+  {
+    "year": 1965,
+    "month": 1,
+    "count": 109
+  },
+  {
+    "year": 1965,
+    "month": 2,
+    "count": 112
+  },
+  {
+    "year": 1965,
+    "month": 3,
+    "count": 104
+  },
+  {
+    "year": 1965,
+    "month": 4,
+    "count": 123
+  },
+  {
+    "year": 1965,
+    "month": 5,
+    "count": 117
+  },
+  {
+    "year": 1965,
+    "month": 6,
+    "count": 123
+  },
+  {
+    "year": 1965,
+    "month": 7,
+    "count": 141
+  },
+  {
+    "year": 1965,
+    "month": 8,
+    "count": 153
+  },
+  {
+    "year": 1965,
+    "month": 9,
+    "count": 115
+  },
+  {
+    "year": 1965,
+    "month": 10,
+    "count": 114
+  },
+  {
+    "year": 1965,
+    "month": 11,
+    "count": 114
+  },
+  {
+    "year": 1965,
+    "month": 12,
+    "count": 112
+  },
+  {
+    "year": 1966,
+    "month": 1,
+    "count": 95
+  },
+  {
+    "year": 1966,
+    "month": 2,
+    "count": 91
+  },
+  {
+    "year": 1966,
+    "month": 3,
+    "count": 108
+  },
+  {
+    "year": 1966,
+    "month": 4,
+    "count": 104
+  },
+  {
+    "year": 1966,
+    "month": 5,
+    "count": 109
+  },
+  {
+    "year": 1966,
+    "month": 6,
+    "count": 125
+  },
+  {
+    "year": 1966,
+    "month": 7,
+    "count": 120
+  },
+  {
+    "year": 1966,
+    "month": 8,
+    "count": 135
+  },
+  {
+    "year": 1966,
+    "month": 9,
+    "count": 118
+  },
+  {
+    "year": 1966,
+    "month": 10,
+    "count": 113
+  },
+  {
+    "year": 1966,
+    "month": 11,
+    "count": 102
+  },
+  {
+    "year": 1966,
+    "month": 12,
+    "count": 126
+  },
+  {
+    "year": 1967,
+    "month": 1,
+    "count": 111
+  },
+  {
+    "year": 1967,
+    "month": 2,
+    "count": 95
+  },
+  {
+    "year": 1967,
+    "month": 3,
+    "count": 121
+  },
+  {
+    "year": 1967,
+    "month": 4,
+    "count": 97
+  },
+  {
+    "year": 1967,
+    "month": 5,
+    "count": 96
+  },
+  {
+    "year": 1967,
+    "month": 6,
+    "count": 102
+  },
+  {
+    "year": 1967,
+    "month": 7,
+    "count": 117
+  },
+  {
+    "year": 1967,
+    "month": 8,
+    "count": 117
+  },
+  {
+    "year": 1967,
+    "month": 9,
+    "count": 126
+  },
+  {
+    "year": 1967,
+    "month": 10,
+    "count": 114
+  },
+  {
+    "year": 1967,
+    "month": 11,
+    "count": 85
+  },
+  {
+    "year": 1967,
+    "month": 12,
+    "count": 117
+  },
+  {
+    "year": 1968,
+    "month": 1,
+    "count": 79
+  },
+  {
+    "year": 1968,
+    "month": 2,
+    "count": 105
+  },
+  {
+    "year": 1968,
+    "month": 3,
+    "count": 95
+  },
+  {
+    "year": 1968,
+    "month": 4,
+    "count": 101
+  },
+  {
+    "year": 1968,
+    "month": 5,
+    "count": 99
+  },
+  {
+    "year": 1968,
+    "month": 6,
+    "count": 83
+  },
+  {
+    "year": 1968,
+    "month": 7,
+    "count": 126
+  },
+  {
+    "year": 1968,
+    "month": 8,
+    "count": 104
+  },
+  {
+    "year": 1968,
+    "month": 9,
+    "count": 108
+  },
+  {
+    "year": 1968,
+    "month": 10,
+    "count": 102
+  },
+  {
+    "year": 1968,
+    "month": 11,
+    "count": 97
+  },
+  {
+    "year": 1968,
+    "month": 12,
+    "count": 104
+  },
+  {
+    "year": 1969,
+    "month": 1,
+    "count": 117
+  },
+  {
+    "year": 1969,
+    "month": 2,
+    "count": 98
+  },
+  {
+    "year": 1969,
+    "month": 3,
+    "count": 121
+  },
+  {
+    "year": 1969,
+    "month": 4,
+    "count": 102
+  },
+  {
+    "year": 1969,
+    "month": 5,
+    "count": 118
+  },
+  {
+    "year": 1969,
+    "month": 6,
+    "count": 92
+  },
+  {
+    "year": 1969,
+    "month": 7,
+    "count": 140
+  },
+  {
+    "year": 1969,
+    "month": 8,
+    "count": 111
+  },
+  {
+    "year": 1969,
+    "month": 9,
+    "count": 121
+  },
+  {
+    "year": 1969,
+    "month": 10,
+    "count": 120
+  },
+  {
+    "year": 1969,
+    "month": 11,
+    "count": 111
+  },
+  {
+    "year": 1969,
+    "month": 12,
+    "count": 107
+  },
+  {
+    "year": 1970,
+    "month": 1,
+    "count": 122
+  },
+  {
+    "year": 1970,
+    "month": 2,
+    "count": 111
+  },
+  {
+    "year": 1970,
+    "month": 3,
+    "count": 114
+  },
+  {
+    "year": 1970,
+    "month": 4,
+    "count": 106
+  },
+  {
+    "year": 1970,
+    "month": 5,
+    "count": 117
+  },
+  {
+    "year": 1970,
+    "month": 6,
+    "count": 127
+  },
+  {
+    "year": 1970,
+    "month": 7,
+    "count": 119
+  },
+  {
+    "year": 1970,
+    "month": 8,
+    "count": 165
+  },
+  {
+    "year": 1970,
+    "month": 9,
+    "count": 119
+  },
+  {
+    "year": 1970,
+    "month": 10,
+    "count": 101
+  },
+  {
+    "year": 1970,
+    "month": 11,
+    "count": 105
+  },
+  {
+    "year": 1970,
+    "month": 12,
+    "count": 123
+  },
+  {
+    "year": 1971,
+    "month": 1,
+    "count": 108
+  },
+  {
+    "year": 1971,
+    "month": 2,
+    "count": 112
+  },
+  {
+    "year": 1971,
+    "month": 3,
+    "count": 112
+  },
+  {
+    "year": 1971,
+    "month": 4,
+    "count": 129
+  },
+  {
+    "year": 1971,
+    "month": 5,
+    "count": 122
+  },
+  {
+    "year": 1971,
+    "month": 6,
+    "count": 112
+  },
+  {
+    "year": 1971,
+    "month": 7,
+    "count": 130
+  },
+  {
+    "year": 1971,
+    "month": 8,
+    "count": 139
+  },
+  {
+    "year": 1971,
+    "month": 9,
+    "count": 119
+  },
+  {
+    "year": 1971,
+    "month": 10,
+    "count": 120
+  },
+  {
+    "year": 1971,
+    "month": 11,
+    "count": 84
+  },
+  {
+    "year": 1971,
+    "month": 12,
+    "count": 101
+  },
+  {
+    "year": 1972,
+    "month": 1,
+    "count": 103
+  },
+  {
+    "year": 1972,
+    "month": 2,
+    "count": 92
+  },
+  {
+    "year": 1972,
+    "month": 3,
+    "count": 102
+  },
+  {
+    "year": 1972,
+    "month": 4,
+    "count": 82
+  },
+  {
+    "year": 1972,
+    "month": 5,
+    "count": 107
+  },
+  {
+    "year": 1972,
+    "month": 6,
+    "count": 98
+  },
+  {
+    "year": 1972,
+    "month": 7,
+    "count": 115
+  },
+  {
+    "year": 1972,
+    "month": 8,
+    "count": 118
+  },
+  {
+    "year": 1972,
+    "month": 9,
+    "count": 122
+  },
+  {
+    "year": 1972,
+    "month": 10,
+    "count": 121
+  },
+  {
+    "year": 1972,
+    "month": 11,
+    "count": 109
+  },
+  {
+    "year": 1972,
+    "month": 12,
+    "count": 87
+  },
+  {
+    "year": 1973,
+    "month": 1,
+    "count": 93
+  },
+  {
+    "year": 1973,
+    "month": 2,
+    "count": 100
+  },
+  {
+    "year": 1973,
+    "month": 3,
+    "count": 94
+  },
+  {
+    "year": 1973,
+    "month": 4,
+    "count": 95
+  },
+  {
+    "year": 1973,
+    "month": 5,
+    "count": 124
+  },
+  {
+    "year": 1973,
+    "month": 6,
+    "count": 103
+  },
+  {
+    "year": 1973,
+    "month": 7,
+    "count": 110
+  },
+  {
+    "year": 1973,
+    "month": 8,
+    "count": 116
+  },
+  {
+    "year": 1973,
+    "month": 9,
+    "count": 104
+  },
+  {
+    "year": 1973,
+    "month": 10,
+    "count": 91
+  },
+  {
+    "year": 1973,
+    "month": 11,
+    "count": 88
+  },
+  {
+    "year": 1973,
+    "month": 12,
+    "count": 97
+  },
+  {
+    "year": 1974,
+    "month": 1,
+    "count": 103
+  },
+  {
+    "year": 1974,
+    "month": 2,
+    "count": 85
+  },
+  {
+    "year": 1974,
+    "month": 3,
+    "count": 104
+  },
+  {
+    "year": 1974,
+    "month": 4,
+    "count": 108
+  },
+  {
+    "year": 1974,
+    "month": 5,
+    "count": 103
+  },
+  {
+    "year": 1974,
+    "month": 6,
+    "count": 108
+  },
+  {
+    "year": 1974,
+    "month": 7,
+    "count": 125
+  },
+  {
+    "year": 1974,
+    "month": 8,
+    "count": 111
+  },
+  {
+    "year": 1974,
+    "month": 9,
+    "count": 107
+  },
+  {
+    "year": 1974,
+    "month": 10,
+    "count": 103
+  },
+  {
+    "year": 1974,
+    "month": 11,
+    "count": 85
+  },
+  {
+    "year": 1974,
+    "month": 12,
+    "count": 86
+  },
+  {
+    "year": 1975,
+    "month": 1,
+    "count": 91
+  },
+  {
+    "year": 1975,
+    "month": 2,
+    "count": 100
+  },
+  {
+    "year": 1975,
+    "month": 3,
+    "count": 113
+  },
+  {
+    "year": 1975,
+    "month": 4,
+    "count": 97
+  },
+  {
+    "year": 1975,
+    "month": 5,
+    "count": 89
+  },
+  {
+    "year": 1975,
+    "month": 6,
+    "count": 102
+  },
+  {
+    "year": 1975,
+    "month": 7,
+    "count": 140
+  },
+  {
+    "year": 1975,
+    "month": 8,
+    "count": 115
+  },
+  {
+    "year": 1975,
+    "month": 9,
+    "count": 98
+  },
+  {
+    "year": 1975,
+    "month": 10,
+    "count": 117
+  },
+  {
+    "year": 1975,
+    "month": 11,
+    "count": 106
+  },
+  {
+    "year": 1975,
+    "month": 12,
+    "count": 109
+  },
+  {
+    "year": 1976,
+    "month": 1,
+    "count": 90
+  },
+  {
+    "year": 1976,
+    "month": 2,
+    "count": 96
+  },
+  {
+    "year": 1976,
+    "month": 3,
+    "count": 115
+  },
+  {
+    "year": 1976,
+    "month": 4,
+    "count": 98
+  },
+  {
+    "year": 1976,
+    "month": 5,
+    "count": 106
+  },
+  {
+    "year": 1976,
+    "month": 6,
+    "count": 105
+  },
+  {
+    "year": 1976,
+    "month": 7,
+    "count": 116
+  },
+  {
+    "year": 1976,
+    "month": 8,
+    "count": 125
+  },
+  {
+    "year": 1976,
+    "month": 9,
+    "count": 123
+  },
+  {
+    "year": 1976,
+    "month": 10,
+    "count": 122
+  },
+  {
+    "year": 1976,
+    "month": 11,
+    "count": 116
+  },
+  {
+    "year": 1976,
+    "month": 12,
+    "count": 118
+  },
+  {
+    "year": 1977,
+    "month": 1,
+    "count": 129
+  },
+  {
+    "year": 1977,
+    "month": 2,
+    "count": 113
+  },
+  {
+    "year": 1977,
+    "month": 3,
+    "count": 138
+  },
+  {
+    "year": 1977,
+    "month": 4,
+    "count": 136
+  },
+  {
+    "year": 1977,
+    "month": 5,
+    "count": 123
+  },
+  {
+    "year": 1977,
+    "month": 6,
+    "count": 147
+  },
+  {
+    "year": 1977,
+    "month": 7,
+    "count": 147
+  },
+  {
+    "year": 1977,
+    "month": 8,
+    "count": 154
+  },
+  {
+    "year": 1977,
+    "month": 9,
+    "count": 141
+  },
+  {
+    "year": 1977,
+    "month": 10,
+    "count": 141
+  },
+  {
+    "year": 1977,
+    "month": 11,
+    "count": 114
+  },
+  {
+    "year": 1977,
+    "month": 12,
+    "count": 148
+  },
+  {
+    "year": 1978,
+    "month": 1,
+    "count": 129
+  },
+  {
+    "year": 1978,
+    "month": 2,
+    "count": 120
+  },
+  {
+    "year": 1978,
+    "month": 3,
+    "count": 151
+  },
+  {
+    "year": 1978,
+    "month": 4,
+    "count": 148
+  },
+  {
+    "year": 1978,
+    "month": 5,
+    "count": 156
+  },
+  {
+    "year": 1978,
+    "month": 6,
+    "count": 154
+  },
+  {
+    "year": 1978,
+    "month": 7,
+    "count": 145
+  },
+  {
+    "year": 1978,
+    "month": 8,
+    "count": 170
+  },
+  {
+    "year": 1978,
+    "month": 9,
+    "count": 156
+  },
+  {
+    "year": 1978,
+    "month": 10,
+    "count": 167
+  },
+  {
+    "year": 1978,
+    "month": 11,
+    "count": 159
+  },
+  {
+    "year": 1978,
+    "month": 12,
+    "count": 163
+  },
+  {
+    "year": 1979,
+    "month": 1,
+    "count": 139
+  },
+  {
+    "year": 1979,
+    "month": 2,
+    "count": 144
+  },
+  {
+    "year": 1979,
+    "month": 3,
+    "count": 160
+  },
+  {
+    "year": 1979,
+    "month": 4,
+    "count": 179
+  },
+  {
+    "year": 1979,
+    "month": 5,
+    "count": 149
+  },
+  {
+    "year": 1979,
+    "month": 6,
+    "count": 155
+  },
+  {
+    "year": 1979,
+    "month": 7,
+    "count": 187
+  },
+  {
+    "year": 1979,
+    "month": 8,
+    "count": 162
+  },
+  {
+    "year": 1979,
+    "month": 9,
+    "count": 189
+  },
+  {
+    "year": 1979,
+    "month": 10,
+    "count": 148
+  },
+  {
+    "year": 1979,
+    "month": 11,
+    "count": 151
+  },
+  {
+    "year": 1979,
+    "month": 12,
+    "count": 156
+  },
+  {
+    "year": 1980,
+    "month": 1,
+    "count": 179
+  },
+  {
+    "year": 1980,
+    "month": 2,
+    "count": 135
+  },
+  {
+    "year": 1980,
+    "month": 3,
+    "count": 172
+  },
+  {
+    "year": 1980,
+    "month": 4,
+    "count": 156
+  },
+  {
+    "year": 1980,
+    "month": 5,
+    "count": 187
+  },
+  {
+    "year": 1980,
+    "month": 6,
+    "count": 174
+  },
+  {
+    "year": 1980,
+    "month": 7,
+    "count": 178
+  },
+  {
+    "year": 1980,
+    "month": 8,
+    "count": 174
+  },
+  {
+    "year": 1980,
+    "month": 9,
+    "count": 167
+  },
+  {
+    "year": 1980,
+    "month": 10,
+    "count": 170
+  },
+  {
+    "year": 1980,
+    "month": 11,
+    "count": 140
+  },
+  {
+    "year": 1980,
+    "month": 12,
+    "count": 159
+  },
+  {
+    "year": 1981,
+    "month": 1,
+    "count": 182
+  },
+  {
+    "year": 1981,
+    "month": 2,
+    "count": 151
+  },
+  {
+    "year": 1981,
+    "month": 3,
+    "count": 202
+  },
+  {
+    "year": 1981,
+    "month": 4,
+    "count": 182
+  },
+  {
+    "year": 1981,
+    "month": 5,
+    "count": 164
+  },
+  {
+    "year": 1981,
+    "month": 6,
+    "count": 171
+  },
+  {
+    "year": 1981,
+    "month": 7,
+    "count": 153
+  },
+  {
+    "year": 1981,
+    "month": 8,
+    "count": 161
+  },
+  {
+    "year": 1981,
+    "month": 9,
+    "count": 172
+  },
+  {
+    "year": 1981,
+    "month": 10,
+    "count": 143
+  },
+  {
+    "year": 1981,
+    "month": 11,
+    "count": 162
+  },
+  {
+    "year": 1981,
+    "month": 12,
+    "count": 178
+  },
+  {
+    "year": 1982,
+    "month": 1,
+    "count": 173
+  },
+  {
+    "year": 1982,
+    "month": 2,
+    "count": 141
+  },
+  {
+    "year": 1982,
+    "month": 3,
+    "count": 169
+  },
+  {
+    "year": 1982,
+    "month": 4,
+    "count": 168
+  },
+  {
+    "year": 1982,
+    "month": 5,
+    "count": 181
+  },
+  {
+    "year": 1982,
+    "month": 6,
+    "count": 175
+  },
+  {
+    "year": 1982,
+    "month": 7,
+    "count": 195
+  },
+  {
+    "year": 1982,
+    "month": 8,
+    "count": 191
+  },
+  {
+    "year": 1982,
+    "month": 9,
+    "count": 156
+  },
+  {
+    "year": 1982,
+    "month": 10,
+    "count": 148
+  },
+  {
+    "year": 1982,
+    "month": 11,
+    "count": 166
+  },
+  {
+    "year": 1982,
+    "month": 12,
+    "count": 165
+  },
+  {
+    "year": 1983,
+    "month": 1,
+    "count": 175
+  },
+  {
+    "year": 1983,
+    "month": 2,
+    "count": 144
+  },
+  {
+    "year": 1983,
+    "month": 3,
+    "count": 185
+  },
+  {
+    "year": 1983,
+    "month": 4,
+    "count": 172
+  },
+  {
+    "year": 1983,
+    "month": 5,
+    "count": 185
+  },
+  {
+    "year": 1983,
+    "month": 6,
+    "count": 181
+  },
+  {
+    "year": 1983,
+    "month": 7,
+    "count": 184
+  },
+  {
+    "year": 1983,
+    "month": 8,
+    "count": 152
+  },
+  {
+    "year": 1983,
+    "month": 9,
+    "count": 154
+  },
+  {
+    "year": 1983,
+    "month": 10,
+    "count": 126
+  },
+  {
+    "year": 1983,
+    "month": 11,
+    "count": 155
+  },
+  {
+    "year": 1983,
+    "month": 12,
+    "count": 174
+  },
+  {
+    "year": 1984,
+    "month": 1,
+    "count": 149
+  },
+  {
+    "year": 1984,
+    "month": 2,
+    "count": 144
+  },
+  {
+    "year": 1984,
+    "month": 3,
+    "count": 174
+  },
+  {
+    "year": 1984,
+    "month": 4,
+    "count": 198
+  },
+  {
+    "year": 1984,
+    "month": 5,
+    "count": 158
+  },
+  {
+    "year": 1984,
+    "month": 6,
+    "count": 150
+  },
+  {
+    "year": 1984,
+    "month": 7,
+    "count": 179
+  },
+  {
+    "year": 1984,
+    "month": 8,
+    "count": 164
+  },
+  {
+    "year": 1984,
+    "month": 9,
+    "count": 212
+  },
+  {
+    "year": 1984,
+    "month": 10,
+    "count": 179
+  },
+  {
+    "year": 1984,
+    "month": 11,
+    "count": 172
+  },
+  {
+    "year": 1984,
+    "month": 12,
+    "count": 161
+  },
+  {
+    "year": 1985,
+    "month": 1,
+    "count": 155
+  },
+  {
+    "year": 1985,
+    "month": 2,
+    "count": 159
+  },
+  {
+    "year": 1985,
+    "month": 3,
+    "count": 196
+  },
+  {
+    "year": 1985,
+    "month": 4,
+    "count": 184
+  },
+  {
+    "year": 1985,
+    "month": 5,
+    "count": 191
+  },
+  {
+    "year": 1985,
+    "month": 6,
+    "count": 167
+  },
+  {
+    "year": 1985,
+    "month": 7,
+    "count": 192
+  },
+  {
+    "year": 1985,
+    "month": 8,
+    "count": 200
+  },
+  {
+    "year": 1985,
+    "month": 9,
+    "count": 195
+  },
+  {
+    "year": 1985,
+    "month": 10,
+    "count": 190
+  },
+  {
+    "year": 1985,
+    "month": 11,
+    "count": 173
+  },
+  {
+    "year": 1985,
+    "month": 12,
+    "count": 154
+  },
+  {
+    "year": 1986,
+    "month": 1,
+    "count": 163
+  },
+  {
+    "year": 1986,
+    "month": 2,
+    "count": 136
+  },
+  {
+    "year": 1986,
+    "month": 3,
+    "count": 149
+  },
+  {
+    "year": 1986,
+    "month": 4,
+    "count": 190
+  },
+  {
+    "year": 1986,
+    "month": 5,
+    "count": 201
+  },
+  {
+    "year": 1986,
+    "month": 6,
+    "count": 197
+  },
+  {
+    "year": 1986,
+    "month": 7,
+    "count": 161
+  },
+  {
+    "year": 1986,
+    "month": 8,
+    "count": 200
+  },
+  {
+    "year": 1986,
+    "month": 9,
+    "count": 184
+  },
+  {
+    "year": 1986,
+    "month": 10,
+    "count": 170
+  },
+  {
+    "year": 1986,
+    "month": 11,
+    "count": 143
+  },
+  {
+    "year": 1986,
+    "month": 12,
+    "count": 178
+  },
+  {
+    "year": 1987,
+    "month": 1,
+    "count": 166
+  },
+  {
+    "year": 1987,
+    "month": 2,
+    "count": 158
+  },
+  {
+    "year": 1987,
+    "month": 3,
+    "count": 179
+  },
+  {
+    "year": 1987,
+    "month": 4,
+    "count": 185
+  },
+  {
+    "year": 1987,
+    "month": 5,
+    "count": 170
+  },
+  {
+    "year": 1987,
+    "month": 6,
+    "count": 176
+  },
+  {
+    "year": 1987,
+    "month": 7,
+    "count": 194
+  },
+  {
+    "year": 1987,
+    "month": 8,
+    "count": 205
+  },
+  {
+    "year": 1987,
+    "month": 9,
+    "count": 167
+  },
+  {
+    "year": 1987,
+    "month": 10,
+    "count": 154
+  },
+  {
+    "year": 1987,
+    "month": 11,
+    "count": 150
+  },
+  {
+    "year": 1987,
+    "month": 12,
+    "count": 188
+  },
+  {
+    "year": 1988,
+    "month": 1,
+    "count": 153
+  },
+  {
+    "year": 1988,
+    "month": 2,
+    "count": 174
+  },
+  {
+    "year": 1988,
+    "month": 3,
+    "count": 176
+  },
+  {
+    "year": 1988,
+    "month": 4,
+    "count": 187
+  },
+  {
+    "year": 1988,
+    "month": 5,
+    "count": 179
+  },
+  {
+    "year": 1988,
+    "month": 6,
+    "count": 200
+  },
+  {
+    "year": 1988,
+    "month": 7,
+    "count": 203
+  },
+  {
+    "year": 1988,
+    "month": 8,
+    "count": 197
+  },
+  {
+    "year": 1988,
+    "month": 9,
+    "count": 198
+  },
+  {
+    "year": 1988,
+    "month": 10,
+    "count": 179
+  },
+  {
+    "year": 1988,
+    "month": 11,
+    "count": 204
+  },
+  {
+    "year": 1988,
+    "month": 12,
+    "count": 181
+  },
+  {
+    "year": 1989,
+    "month": 1,
+    "count": 172
+  },
+  {
+    "year": 1989,
+    "month": 2,
+    "count": 173
+  },
+  {
+    "year": 1989,
+    "month": 3,
+    "count": 175
+  },
+  {
+    "year": 1989,
+    "month": 4,
+    "count": 150
+  },
+  {
+    "year": 1989,
+    "month": 5,
+    "count": 163
+  },
+  {
+    "year": 1989,
+    "month": 6,
+    "count": 185
+  },
+  {
+    "year": 1989,
+    "month": 7,
+    "count": 219
+  },
+  {
+    "year": 1989,
+    "month": 8,
+    "count": 216
+  },
+  {
+    "year": 1989,
+    "month": 9,
+    "count": 205
+  },
+  {
+    "year": 1989,
+    "month": 10,
+    "count": 221
+  },
+  {
+    "year": 1989,
+    "month": 11,
+    "count": 184
+  },
+  {
+    "year": 1989,
+    "month": 12,
+    "count": 195
+  },
+  {
+    "year": 1990,
+    "month": 1,
+    "count": 181
+  },
+  {
+    "year": 1990,
+    "month": 2,
+    "count": 156
+  },
+  {
+    "year": 1990,
+    "month": 3,
+    "count": 228
+  },
+  {
+    "year": 1990,
+    "month": 4,
+    "count": 205
+  },
+  {
+    "year": 1990,
+    "month": 5,
+    "count": 186
+  },
+  {
+    "year": 1990,
+    "month": 6,
+    "count": 218
+  },
+  {
+    "year": 1990,
+    "month": 7,
+    "count": 213
+  },
+  {
+    "year": 1990,
+    "month": 8,
+    "count": 205
+  },
+  {
+    "year": 1990,
+    "month": 9,
+    "count": 233
+  },
+  {
+    "year": 1990,
+    "month": 10,
+    "count": 205
+  },
+  {
+    "year": 1990,
+    "month": 11,
+    "count": 174
+  },
+  {
+    "year": 1990,
+    "month": 12,
+    "count": 183
+  },
+  {
+    "year": 1991,
+    "month": 1,
+    "count": 188
+  },
+  {
+    "year": 1991,
+    "month": 2,
+    "count": 188
+  },
+  {
+    "year": 1991,
+    "month": 3,
+    "count": 165
+  },
+  {
+    "year": 1991,
+    "month": 4,
+    "count": 193
+  },
+  {
+    "year": 1991,
+    "month": 5,
+    "count": 213
+  },
+  {
+    "year": 1991,
+    "month": 6,
+    "count": 199
+  },
+  {
+    "year": 1991,
+    "month": 7,
+    "count": 217
+  },
+  {
+    "year": 1991,
+    "month": 8,
+    "count": 207
+  },
+  {
+    "year": 1991,
+    "month": 9,
+    "count": 182
+  },
+  {
+    "year": 1991,
+    "month": 10,
+    "count": 178
+  },
+  {
+    "year": 1991,
+    "month": 11,
+    "count": 153
+  },
+  {
+    "year": 1991,
+    "month": 12,
+    "count": 186
+  },
+  {
+    "year": 1992,
+    "month": 1,
+    "count": 167
+  },
+  {
+    "year": 1992,
+    "month": 2,
+    "count": 172
+  },
+  {
+    "year": 1992,
+    "month": 3,
+    "count": 216
+  },
+  {
+    "year": 1992,
+    "month": 4,
+    "count": 182
+  },
+  {
+    "year": 1992,
+    "month": 5,
+    "count": 210
+  },
+  {
+    "year": 1992,
+    "month": 6,
+    "count": 178
+  },
+  {
+    "year": 1992,
+    "month": 7,
+    "count": 218
+  },
+  {
+    "year": 1992,
+    "month": 8,
+    "count": 166
+  },
+  {
+    "year": 1992,
+    "month": 9,
+    "count": 199
+  },
+  {
+    "year": 1992,
+    "month": 10,
+    "count": 178
+  },
+  {
+    "year": 1992,
+    "month": 11,
+    "count": 163
+  },
+  {
+    "year": 1992,
+    "month": 12,
+    "count": 171
+  },
+  {
+    "year": 1993,
+    "month": 1,
+    "count": 175
+  },
+  {
+    "year": 1993,
+    "month": 2,
+    "count": 171
+  },
+  {
+    "year": 1993,
+    "month": 3,
+    "count": 170
+  },
+  {
+    "year": 1993,
+    "month": 4,
+    "count": 186
+  },
+  {
+    "year": 1993,
+    "month": 5,
+    "count": 184
+  },
+  {
+    "year": 1993,
+    "month": 6,
+    "count": 196
+  },
+  {
+    "year": 1993,
+    "month": 7,
+    "count": 171
+  },
+  {
+    "year": 1993,
+    "month": 8,
+    "count": 189
+  },
+  {
+    "year": 1993,
+    "month": 9,
+    "count": 187
+  },
+  {
+    "year": 1993,
+    "month": 10,
+    "count": 187
+  },
+  {
+    "year": 1993,
+    "month": 11,
+    "count": 151
+  },
+  {
+    "year": 1993,
+    "month": 12,
+    "count": 186
+  },
+  {
+    "year": 1994,
+    "month": 1,
+    "count": 171
+  },
+  {
+    "year": 1994,
+    "month": 2,
+    "count": 174
+  },
+  {
+    "year": 1994,
+    "month": 3,
+    "count": 191
+  },
+  {
+    "year": 1994,
+    "month": 4,
+    "count": 174
+  },
+  {
+    "year": 1994,
+    "month": 5,
+    "count": 190
+  },
+  {
+    "year": 1994,
+    "month": 6,
+    "count": 151
+  },
+  {
+    "year": 1994,
+    "month": 7,
+    "count": 173
+  },
+  {
+    "year": 1994,
+    "month": 8,
+    "count": 199
+  },
+  {
+    "year": 1994,
+    "month": 9,
+    "count": 168
+  },
+  {
+    "year": 1994,
+    "month": 10,
+    "count": 160
+  },
+  {
+    "year": 1994,
+    "month": 11,
+    "count": 199
+  },
+  {
+    "year": 1994,
+    "month": 12,
+    "count": 175
+  },
+  {
+    "year": 1995,
+    "month": 1,
+    "count": 151
+  },
+  {
+    "year": 1995,
+    "month": 2,
+    "count": 146
+  },
+  {
+    "year": 1995,
+    "month": 3,
+    "count": 189
+  },
+  {
+    "year": 1995,
+    "month": 4,
+    "count": 154
+  },
+  {
+    "year": 1995,
+    "month": 5,
+    "count": 157
+  },
+  {
+    "year": 1995,
+    "month": 6,
+    "count": 189
+  },
+  {
+    "year": 1995,
+    "month": 7,
+    "count": 202
+  },
+  {
+    "year": 1995,
+    "month": 8,
+    "count": 194
+  },
+  {
+    "year": 1995,
+    "month": 9,
+    "count": 195
+  },
+  {
+    "year": 1995,
+    "month": 10,
+    "count": 147
+  },
+  {
+    "year": 1995,
+    "month": 11,
+    "count": 164
+  },
+  {
+    "year": 1995,
+    "month": 12,
+    "count": 173
+  },
+  {
+    "year": 1996,
+    "month": 1,
+    "count": 164
+  },
+  {
+    "year": 1996,
+    "month": 2,
+    "count": 158
+  },
+  {
+    "year": 1996,
+    "month": 3,
+    "count": 187
+  },
+  {
+    "year": 1996,
+    "month": 4,
+    "count": 169
+  },
+  {
+    "year": 1996,
+    "month": 5,
+    "count": 189
+  },
+  {
+    "year": 1996,
+    "month": 6,
+    "count": 167
+  },
+  {
+    "year": 1996,
+    "month": 7,
+    "count": 183
+  },
+  {
+    "year": 1996,
+    "month": 8,
+    "count": 198
+  },
+  {
+    "year": 1996,
+    "month": 9,
+    "count": 169
+  },
+  {
+    "year": 1996,
+    "month": 10,
+    "count": 156
+  },
+  {
+    "year": 1996,
+    "month": 11,
+    "count": 175
+  },
+  {
+    "year": 1996,
+    "month": 12,
+    "count": 158
+  },
+  {
+    "year": 1997,
+    "month": 1,
+    "count": 173
+  },
+  {
+    "year": 1997,
+    "month": 2,
+    "count": 156
+  },
+  {
+    "year": 1997,
+    "month": 3,
+    "count": 176
+  },
+  {
+    "year": 1997,
+    "month": 4,
+    "count": 156
+  },
+  {
+    "year": 1997,
+    "month": 5,
+    "count": 165
+  },
+  {
+    "year": 1997,
+    "month": 6,
+    "count": 145
+  },
+  {
+    "year": 1997,
+    "month": 7,
+    "count": 202
+  },
+  {
+    "year": 1997,
+    "month": 8,
+    "count": 186
+  },
+  {
+    "year": 1997,
+    "month": 9,
+    "count": 168
+  },
+  {
+    "year": 1997,
+    "month": 10,
+    "count": 141
+  },
+  {
+    "year": 1997,
+    "month": 11,
+    "count": 152
+  },
+  {
+    "year": 1997,
+    "month": 12,
+    "count": 179
+  },
+  {
+    "year": 1998,
+    "month": 1,
+    "count": 167
+  },
+  {
+    "year": 1998,
+    "month": 2,
+    "count": 147
+  },
+  {
+    "year": 1998,
+    "month": 3,
+    "count": 176
+  },
+  {
+    "year": 1998,
+    "month": 4,
+    "count": 176
+  },
+  {
+    "year": 1998,
+    "month": 5,
+    "count": 169
+  },
+  {
+    "year": 1998,
+    "month": 6,
+    "count": 143
+  },
+  {
+    "year": 1998,
+    "month": 7,
+    "count": 186
+  },
+  {
+    "year": 1998,
+    "month": 8,
+    "count": 167
+  },
+  {
+    "year": 1998,
+    "month": 9,
+    "count": 181
+  },
+  {
+    "year": 1998,
+    "month": 10,
+    "count": 168
+  },
+  {
+    "year": 1998,
+    "month": 11,
+    "count": 149
+  },
+  {
+    "year": 1998,
+    "month": 12,
+    "count": 164
+  },
+  {
+    "year": 1999,
+    "month": 1,
+    "count": 161
+  },
+  {
+    "year": 1999,
+    "month": 2,
+    "count": 163
+  },
+  {
+    "year": 1999,
+    "month": 3,
+    "count": 165
+  },
+  {
+    "year": 1999,
+    "month": 4,
+    "count": 153
+  },
+  {
+    "year": 1999,
+    "month": 5,
+    "count": 154
+  },
+  {
+    "year": 1999,
+    "month": 6,
+    "count": 161
+  },
+  {
+    "year": 1999,
+    "month": 7,
+    "count": 156
+  },
+  {
+    "year": 1999,
+    "month": 8,
+    "count": 141
+  },
+  {
+    "year": 1999,
+    "month": 9,
+    "count": 179
+  },
+  {
+    "year": 1999,
+    "month": 10,
+    "count": 156
+  },
+  {
+    "year": 1999,
+    "month": 11,
+    "count": 142
+  },
+  {
+    "year": 1999,
+    "month": 12,
+    "count": 134
+  },
+  {
+    "year": 2000,
+    "month": 1,
+    "count": 150
+  },
+  {
+    "year": 2000,
+    "month": 2,
+    "count": 159
+  },
+  {
+    "year": 2000,
+    "month": 3,
+    "count": 163
+  },
+  {
+    "year": 2000,
+    "month": 4,
+    "count": 169
+  },
+  {
+    "year": 2000,
+    "month": 5,
+    "count": 163
+  },
+  {
+    "year": 2000,
+    "month": 6,
+    "count": 152
+  },
+  {
+    "year": 2000,
+    "month": 7,
+    "count": 174
+  },
+  {
+    "year": 2000,
+    "month": 8,
+    "count": 145
+  },
+  {
+    "year": 2000,
+    "month": 9,
+    "count": 131
+  },
+  {
+    "year": 2000,
+    "month": 10,
+    "count": 145
+  },
+  {
+    "year": 2000,
+    "month": 11,
+    "count": 148
+  },
+  {
+    "year": 2000,
+    "month": 12,
+    "count": 178
+  },
+  {
+    "year": 2001,
+    "month": 1,
+    "count": 173
+  },
+  {
+    "year": 2001,
+    "month": 2,
+    "count": 156
+  },
+  {
+    "year": 2001,
+    "month": 3,
+    "count": 167
+  },
+  {
+    "year": 2001,
+    "month": 4,
+    "count": 132
+  },
+  {
+    "year": 2001,
+    "month": 5,
+    "count": 159
+  },
+  {
+    "year": 2001,
+    "month": 6,
+    "count": 164
+  },
+  {
+    "year": 2001,
+    "month": 7,
+    "count": 179
+  },
+  {
+    "year": 2001,
+    "month": 8,
+    "count": 190
+  },
+  {
+    "year": 2001,
+    "month": 9,
+    "count": 158
+  },
+  {
+    "year": 2001,
+    "month": 10,
+    "count": 155
+  },
+  {
+    "year": 2001,
+    "month": 11,
+    "count": 174
+  },
+  {
+    "year": 2001,
+    "month": 12,
+    "count": 149
+  },
+  {
+    "year": 2002,
+    "month": 1,
+    "count": 163
+  },
+  {
+    "year": 2002,
+    "month": 2,
+    "count": 140
+  },
+  {
+    "year": 2002,
+    "month": 3,
+    "count": 192
+  },
+  {
+    "year": 2002,
+    "month": 4,
+    "count": 173
+  },
+  {
+    "year": 2002,
+    "month": 5,
+    "count": 191
+  },
+  {
+    "year": 2002,
+    "month": 6,
+    "count": 149
+  },
+  {
+    "year": 2002,
+    "month": 7,
+    "count": 172
+  },
+  {
+    "year": 2002,
+    "month": 8,
+    "count": 177
+  },
+  {
+    "year": 2002,
+    "month": 9,
+    "count": 170
+  },
+  {
+    "year": 2002,
+    "month": 10,
+    "count": 173
+  },
+  {
+    "year": 2002,
+    "month": 11,
+    "count": 164
+  },
+  {
+    "year": 2002,
+    "month": 12,
+    "count": 158
+  },
+  {
+    "year": 2003,
+    "month": 1,
+    "count": 170
+  },
+  {
+    "year": 2003,
+    "month": 2,
+    "count": 145
+  },
+  {
+    "year": 2003,
+    "month": 3,
+    "count": 178
+  },
+  {
+    "year": 2003,
+    "month": 4,
+    "count": 181
+  },
+  {
+    "year": 2003,
+    "month": 5,
+    "count": 185
+  },
+  {
+    "year": 2003,
+    "month": 6,
+    "count": 173
+  },
+  {
+    "year": 2003,
+    "month": 7,
+    "count": 209
+  },
+  {
+    "year": 2003,
+    "month": 8,
+    "count": 194
+  },
+  {
+    "year": 2003,
+    "month": 9,
+    "count": 222
+  },
+  {
+    "year": 2003,
+    "month": 10,
+    "count": 188
+  },
+  {
+    "year": 2003,
+    "month": 11,
+    "count": 154
+  },
+  {
+    "year": 2003,
+    "month": 12,
+    "count": 160
+  },
+  {
+    "year": 2004,
+    "month": 1,
+    "count": 166
+  },
+  {
+    "year": 2004,
+    "month": 2,
+    "count": 162
+  },
+  {
+    "year": 2004,
+    "month": 3,
+    "count": 184
+  },
+  {
+    "year": 2004,
+    "month": 4,
+    "count": 177
+  },
+  {
+    "year": 2004,
+    "month": 5,
+    "count": 166
+  },
+  {
+    "year": 2004,
+    "month": 6,
+    "count": 179
+  },
+  {
+    "year": 2004,
+    "month": 7,
+    "count": 198
+  },
+  {
+    "year": 2004,
+    "month": 8,
+    "count": 193
+  },
+  {
+    "year": 2004,
+    "month": 9,
+    "count": 167
+  },
+  {
+    "year": 2004,
+    "month": 10,
+    "count": 172
+  },
+  {
+    "year": 2004,
+    "month": 11,
+    "count": 177
+  },
+  {
+    "year": 2004,
+    "month": 12,
+    "count": 163
+  },
+  {
+    "year": 2005,
+    "month": 1,
+    "count": 181
+  },
+  {
+    "year": 2005,
+    "month": 2,
+    "count": 181
+  },
+  {
+    "year": 2005,
+    "month": 3,
+    "count": 192
+  },
+  {
+    "year": 2005,
+    "month": 4,
+    "count": 158
+  },
+  {
+    "year": 2005,
+    "month": 5,
+    "count": 171
+  },
+  {
+    "year": 2005,
+    "month": 6,
+    "count": 191
+  },
+  {
+    "year": 2005,
+    "month": 7,
+    "count": 192
+  },
+  {
+    "year": 2005,
+    "month": 8,
+    "count": 203
+  },
+  {
+    "year": 2005,
+    "month": 9,
+    "count": 193
+  },
+  {
+    "year": 2005,
+    "month": 10,
+    "count": 197
+  },
+  {
+    "year": 2005,
+    "month": 11,
+    "count": 163
+  },
+  {
+    "year": 2005,
+    "month": 12,
+    "count": 182
+  },
+  {
+    "year": 2006,
+    "month": 1,
+    "count": 188
+  },
+  {
+    "year": 2006,
+    "month": 2,
+    "count": 187
+  },
+  {
+    "year": 2006,
+    "month": 3,
+    "count": 204
+  },
+  {
+    "year": 2006,
+    "month": 4,
+    "count": 173
+  },
+  {
+    "year": 2006,
+    "month": 5,
+    "count": 194
+  },
+  {
+    "year": 2006,
+    "month": 6,
+    "count": 179
+  },
+  {
+    "year": 2006,
+    "month": 7,
+    "count": 204
+  },
+  {
+    "year": 2006,
+    "month": 8,
+    "count": 193
+  },
+  {
+    "year": 2006,
+    "month": 9,
+    "count": 178
+  },
+  {
+    "year": 2006,
+    "month": 10,
+    "count": 225
+  },
+  {
+    "year": 2006,
+    "month": 11,
+    "count": 185
+  },
+  {
+    "year": 2006,
+    "month": 12,
+    "count": 203
+  },
+  {
+    "year": 2007,
+    "month": 1,
+    "count": 190
+  },
+  {
+    "year": 2007,
+    "month": 2,
+    "count": 183
+  },
+  {
+    "year": 2007,
+    "month": 3,
+    "count": 196
+  },
+  {
+    "year": 2007,
+    "month": 4,
+    "count": 175
+  },
+  {
+    "year": 2007,
+    "month": 5,
+    "count": 200
+  },
+  {
+    "year": 2007,
+    "month": 6,
+    "count": 183
+  },
+  {
+    "year": 2007,
+    "month": 7,
+    "count": 188
+  },
+  {
+    "year": 2007,
+    "month": 8,
+    "count": 220
+  },
+  {
+    "year": 2007,
+    "month": 9,
+    "count": 206
+  },
+  {
+    "year": 2007,
+    "month": 10,
+    "count": 183
+  },
+  {
+    "year": 2007,
+    "month": 11,
+    "count": 169
+  },
+  {
+    "year": 2007,
+    "month": 12,
+    "count": 189
+  },
+  {
+    "year": 2008,
+    "month": 1,
+    "count": 185
+  },
+  {
+    "year": 2008,
+    "month": 2,
+    "count": 173
+  },
+  {
+    "year": 2008,
+    "month": 3,
+    "count": 187
+  },
+  {
+    "year": 2008,
+    "month": 4,
+    "count": 202
+  },
+  {
+    "year": 2008,
+    "month": 5,
+    "count": 177
+  },
+  {
+    "year": 2008,
+    "month": 6,
+    "count": 194
+  },
+  {
+    "year": 2008,
+    "month": 7,
+    "count": 214
+  },
+  {
+    "year": 2008,
+    "month": 8,
+    "count": 180
+  },
+  {
+    "year": 2008,
+    "month": 9,
+    "count": 219
+  },
+  {
+    "year": 2008,
+    "month": 10,
+    "count": 178
+  },
+  {
+    "year": 2008,
+    "month": 11,
+    "count": 165
+  },
+  {
+    "year": 2008,
+    "month": 12,
+    "count": 180
+  },
+  {
+    "year": 2009,
+    "month": 1,
+    "count": 183
+  },
+  {
+    "year": 2009,
+    "month": 2,
+    "count": 162
+  },
+  {
+    "year": 2009,
+    "month": 3,
+    "count": 169
+  },
+  {
+    "year": 2009,
+    "month": 4,
+    "count": 178
+  },
+  {
+    "year": 2009,
+    "month": 5,
+    "count": 160
+  },
+  {
+    "year": 2009,
+    "month": 6,
+    "count": 179
+  },
+  {
+    "year": 2009,
+    "month": 7,
+    "count": 174
+  },
+  {
+    "year": 2009,
+    "month": 8,
+    "count": 192
+  },
+  {
+    "year": 2009,
+    "month": 9,
+    "count": 206
+  },
+  {
+    "year": 2009,
+    "month": 10,
+    "count": 172
+  },
+  {
+    "year": 2009,
+    "month": 11,
+    "count": 168
+  },
+  {
+    "year": 2009,
+    "month": 12,
+    "count": 168
+  },
+  {
+    "year": 2010,
+    "month": 1,
+    "count": 169
+  },
+  {
+    "year": 2010,
+    "month": 2,
+    "count": 144
+  },
+  {
+    "year": 2010,
+    "month": 3,
+    "count": 191
+  },
+  {
+    "year": 2010,
+    "month": 4,
+    "count": 172
+  },
+  {
+    "year": 2010,
+    "month": 5,
+    "count": 170
+  },
+  {
+    "year": 2010,
+    "month": 6,
+    "count": 204
+  },
+  {
+    "year": 2010,
+    "month": 7,
+    "count": 164
+  },
+  {
+    "year": 2010,
+    "month": 8,
+    "count": 205
+  },
+  {
+    "year": 2010,
+    "month": 9,
+    "count": 193
+  },
+  {
+    "year": 2010,
+    "month": 10,
+    "count": 184
+  },
+  {
+    "year": 2010,
+    "month": 11,
+    "count": 184
+  },
+  {
+    "year": 2010,
+    "month": 12,
+    "count": 196
+  },
+  {
+    "year": 2011,
+    "month": 1,
+    "count": 162
+  },
+  {
+    "year": 2011,
+    "month": 2,
+    "count": 158
+  },
+  {
+    "year": 2011,
+    "month": 3,
+    "count": 192
+  },
+  {
+    "year": 2011,
+    "month": 4,
+    "count": 151
+  },
+  {
+    "year": 2011,
+    "month": 5,
+    "count": 174
+  },
+  {
+    "year": 2011,
+    "month": 6,
+    "count": 172
+  },
+  {
+    "year": 2011,
+    "month": 7,
+    "count": 172
+  },
+  {
+    "year": 2011,
+    "month": 8,
+    "count": 185
+  },
+  {
+    "year": 2011,
+    "month": 9,
+    "count": 169
+  },
+  {
+    "year": 2011,
+    "month": 10,
+    "count": 191
+  },
+  {
+    "year": 2011,
+    "month": 11,
+    "count": 180
+  },
+  {
+    "year": 2011,
+    "month": 12,
+    "count": 156
+  },
+  {
+    "year": 2012,
+    "month": 1,
+    "count": 179
+  },
+  {
+    "year": 2012,
+    "month": 2,
+    "count": 149
+  },
+  {
+    "year": 2012,
+    "month": 3,
+    "count": 179
+  },
+  {
+    "year": 2012,
+    "month": 4,
+    "count": 162
+  },
+  {
+    "year": 2012,
+    "month": 5,
+    "count": 183
+  },
+  {
+    "year": 2012,
+    "month": 6,
+    "count": 177
+  },
+  {
+    "year": 2012,
+    "month": 7,
+    "count": 171
+  },
+  {
+    "year": 2012,
+    "month": 8,
+    "count": 186
+  },
+  {
+    "year": 2012,
+    "month": 9,
+    "count": 192
+  },
+  {
+    "year": 2012,
+    "month": 10,
+    "count": 196
+  },
+  {
+    "year": 2012,
+    "month": 11,
+    "count": 186
+  },
+  {
+    "year": 2012,
+    "month": 12,
+    "count": 153
+  },
+  {
+    "year": 2013,
+    "month": 1,
+    "count": 171
+  },
+  {
+    "year": 2013,
+    "month": 2,
+    "count": 174
+  },
+  {
+    "year": 2013,
+    "month": 3,
+    "count": 181
+  },
+  {
+    "year": 2013,
+    "month": 4,
+    "count": 178
+  },
+  {
+    "year": 2013,
+    "month": 5,
+    "count": 150
+  },
+  {
+    "year": 2013,
+    "month": 6,
+    "count": 170
+  },
+  {
+    "year": 2013,
+    "month": 7,
+    "count": 179
+  },
+  {
+    "year": 2013,
+    "month": 8,
+    "count": 205
+  },
+  {
+    "year": 2013,
+    "month": 9,
+    "count": 200
+  },
+  {
+    "year": 2013,
+    "month": 10,
+    "count": 205
+  },
+  {
+    "year": 2013,
+    "month": 11,
+    "count": 181
+  },
+  {
+    "year": 2013,
+    "month": 12,
+    "count": 179
+  },
+  {
+    "year": 2014,
+    "month": 1,
+    "count": 189
+  },
+  {
+    "year": 2014,
+    "month": 2,
+    "count": 146
+  },
+  {
+    "year": 2014,
+    "month": 3,
+    "count": 182
+  },
+  {
+    "year": 2014,
+    "month": 4,
+    "count": 166
+  },
+  {
+    "year": 2014,
+    "month": 5,
+    "count": 176
+  },
+  {
+    "year": 2014,
+    "month": 6,
+    "count": 176
+  },
+  {
+    "year": 2014,
+    "month": 7,
+    "count": 184
+  },
+  {
+    "year": 2014,
+    "month": 8,
+    "count": 196
+  },
+  {
+    "year": 2014,
+    "month": 9,
+    "count": 200
+  },
+  {
+    "year": 2014,
+    "month": 10,
+    "count": 178
+  },
+  {
+    "year": 2014,
+    "month": 11,
+    "count": 141
+  },
+  {
+    "year": 2014,
+    "month": 12,
+    "count": 191
+  },
+  {
+    "year": 2015,
+    "month": 1,
+    "count": 195
+  },
+  {
+    "year": 2015,
+    "month": 2,
+    "count": 156
+  },
+  {
+    "year": 2015,
+    "month": 3,
+    "count": 199
+  },
+  {
+    "year": 2015,
+    "month": 4,
+    "count": 183
+  },
+  {
+    "year": 2015,
+    "month": 5,
+    "count": 189
+  },
+  {
+    "year": 2015,
+    "month": 6,
+    "count": 178
+  },
+  {
+    "year": 2015,
+    "month": 7,
+    "count": 197
+  },
+  {
+    "year": 2015,
+    "month": 8,
+    "count": 186
+  },
+  {
+    "year": 2015,
+    "month": 9,
+    "count": 193
+  },
+  {
+    "year": 2015,
+    "month": 10,
+    "count": 170
+  },
+  {
+    "year": 2015,
+    "month": 11,
+    "count": 168
+  },
+  {
+    "year": 2015,
+    "month": 12,
+    "count": 183
+  },
+  {
+    "year": 2016,
+    "month": 1,
+    "count": 162
+  },
+  {
+    "year": 2016,
+    "month": 2,
+    "count": 165
+  },
+  {
+    "year": 2016,
+    "month": 3,
+    "count": 182
+  },
+  {
+    "year": 2016,
+    "month": 4,
+    "count": 173
+  },
+  {
+    "year": 2016,
+    "month": 5,
+    "count": 174
+  },
+  {
+    "year": 2016,
+    "month": 6,
+    "count": 196
+  },
+  {
+    "year": 2016,
+    "month": 7,
+    "count": 205
+  },
+  {
+    "year": 2016,
+    "month": 8,
+    "count": 198
+  },
+  {
+    "year": 2016,
+    "month": 9,
+    "count": 160
+  },
+  {
+    "year": 2016,
+    "month": 10,
+    "count": 183
+  },
+  {
+    "year": 2016,
+    "month": 11,
+    "count": 185
+  },
+  {
+    "year": 2016,
+    "month": 12,
+    "count": 189
+  },
+  {
+    "year": 2017,
+    "month": 1,
+    "count": 177
+  },
+  {
+    "year": 2017,
+    "month": 2,
+    "count": 130
+  },
+  {
+    "year": 2017,
+    "month": 3,
+    "count": 168
+  },
+  {
+    "year": 2017,
+    "month": 4,
+    "count": 164
+  },
+  {
+    "year": 2017,
+    "month": 5,
+    "count": 182
+  },
+  {
+    "year": 2017,
+    "month": 6,
+    "count": 196
+  },
+  {
+    "year": 2017,
+    "month": 7,
+    "count": 197
+  },
+  {
+    "year": 2017,
+    "month": 8,
+    "count": 201
+  },
+  {
+    "year": 2017,
+    "month": 9,
+    "count": 173
+  },
+  {
+    "year": 2017,
+    "month": 10,
+    "count": 188
+  },
+  {
+    "year": 2017,
+    "month": 11,
+    "count": 188
+  },
+  {
+    "year": 2017,
+    "month": 12,
+    "count": 170
+  },
+  {
+    "year": 2018,
+    "month": 1,
+    "count": 180
+  },
+  {
+    "year": 2018,
+    "month": 2,
+    "count": 152
+  },
+  {
+    "year": 2018,
+    "month": 3,
+    "count": 158
+  },
+  {
+    "year": 2018,
+    "month": 4,
+    "count": 174
+  },
+  {
+    "year": 2018,
+    "month": 5,
+    "count": 168
+  },
+  {
+    "year": 2018,
+    "month": 6,
+    "count": 172
+  },
+  {
+    "year": 2018,
+    "month": 7,
+    "count": 206
+  },
+  {
+    "year": 2018,
+    "month": 8,
+    "count": 192
+  },
+  {
+    "year": 2018,
+    "month": 9,
+    "count": 178
+  },
+  {
+    "year": 2018,
+    "month": 10,
+    "count": 169
+  },
+  {
+    "year": 2018,
+    "month": 11,
+    "count": 169
+  },
+  {
+    "year": 2018,
+    "month": 12,
+    "count": 156
+  },
+  {
+    "year": 2019,
+    "month": 1,
+    "count": 169
+  },
+  {
+    "year": 2019,
+    "month": 2,
+    "count": 154
+  },
+  {
+    "year": 2019,
+    "month": 3,
+    "count": 160
+  },
+  {
+    "year": 2019,
+    "month": 4,
+    "count": 155
+  },
+  {
+    "year": 2019,
+    "month": 5,
+    "count": 178
+  },
+  {
+    "year": 2019,
+    "month": 6,
+    "count": 148
+  },
+  {
+    "year": 2019,
+    "month": 7,
+    "count": 172
+  },
+  {
+    "year": 2019,
+    "month": 8,
+    "count": 167
+  },
+  {
+    "year": 2019,
+    "month": 9,
+    "count": 161
+  },
+  {
+    "year": 2019,
+    "month": 10,
+    "count": 174
+  },
+  {
+    "year": 2019,
+    "month": 11,
+    "count": 163
+  },
+  {
+    "year": 2019,
+    "month": 12,
+    "count": 175
+  },
+  {
+    "year": 2020,
+    "month": 1,
+    "count": 167
+  },
+  {
+    "year": 2020,
+    "month": 2,
+    "count": 146
+  },
+  {
+    "year": 2020,
+    "month": 3,
+    "count": 172
+  },
+  {
+    "year": 2020,
+    "month": 4,
+    "count": 151
+  },
+  {
+    "year": 2020,
+    "month": 5,
+    "count": 158
+  },
+  {
+    "year": 2020,
+    "month": 6,
+    "count": 161
+  },
+  {
+    "year": 2020,
+    "month": 7,
+    "count": 185
+  },
+  {
+    "year": 2020,
+    "month": 8,
+    "count": 171
+  },
+  {
+    "year": 2020,
+    "month": 9,
+    "count": 158
+  },
+  {
+    "year": 2020,
+    "month": 10,
+    "count": 136
+  },
+  {
+    "year": 2020,
+    "month": 11,
+    "count": 169
+  },
+  {
+    "year": 2020,
+    "month": 12,
+    "count": 146
+  },
+  {
+    "year": 2021,
+    "month": 1,
+    "count": 148
+  },
+  {
+    "year": 2021,
+    "month": 2,
+    "count": 133
+  },
+  {
+    "year": 2021,
+    "month": 3,
+    "count": 161
+  },
+  {
+    "year": 2021,
+    "month": 4,
+    "count": 151
+  },
+  {
+    "year": 2021,
+    "month": 5,
+    "count": 155
+  },
+  {
+    "year": 2021,
+    "month": 6,
+    "count": 156
+  },
+  {
+    "year": 2021,
+    "month": 7,
+    "count": 157
+  },
+  {
+    "year": 2021,
+    "month": 8,
+    "count": 190
+  },
+  {
+    "year": 2021,
+    "month": 9,
+    "count": 151
+  },
+  {
+    "year": 2021,
+    "month": 10,
+    "count": 155
+  },
+  {
+    "year": 2021,
+    "month": 11,
+    "count": 155
+  },
+  {
+    "year": 2021,
+    "month": 12,
+    "count": 151
+  },
+  {
+    "year": 2022,
+    "month": 1,
+    "count": 157
+  },
+  {
+    "year": 2022,
+    "month": 2,
+    "count": 135
+  },
+  {
+    "year": 2022,
+    "month": 3,
+    "count": 167
+  },
+  {
+    "year": 2022,
+    "month": 4,
+    "count": 143
+  },
+  {
+    "year": 2022,
+    "month": 5,
+    "count": 134
+  },
+  {
+    "year": 2022,
+    "month": 6,
+    "count": 150
+  },
+  {
+    "year": 2022,
+    "month": 7,
+    "count": 170
+  },
+  {
+    "year": 2022,
+    "month": 8,
+    "count": 163
+  },
+  {
+    "year": 2022,
+    "month": 9,
+    "count": 160
+  },
+  {
+    "year": 2022,
+    "month": 10,
+    "count": 144
+  },
+  {
+    "year": 2022,
+    "month": 11,
+    "count": 155
+  },
+  {
+    "year": 2022,
+    "month": 12,
+    "count": 154
+  },
+  {
+    "year": 2023,
+    "month": 1,
+    "count": 160
+  },
+  {
+    "year": 2023,
+    "month": 2,
+    "count": 126
+  },
+  {
+    "year": 2023,
+    "month": 3,
+    "count": 141
+  },
+  {
+    "year": 2023,
+    "month": 4,
+    "count": 169
+  },
+  {
+    "year": 2023,
+    "month": 5,
+    "count": 134
+  },
+  {
+    "year": 2023,
+    "month": 6,
+    "count": 157
+  },
+  {
+    "year": 2023,
+    "month": 7,
+    "count": 169
+  },
+  {
+    "year": 2023,
+    "month": 8,
+    "count": 165
+  },
+  {
+    "year": 2023,
+    "month": 9,
+    "count": 154
+  },
+  {
+    "year": 2023,
+    "month": 10,
+    "count": 161
+  },
+  {
+    "year": 2023,
+    "month": 11,
+    "count": 153
+  },
+  {
+    "year": 2023,
+    "month": 12,
+    "count": 152
+  },
+  {
+    "year": 2024,
+    "month": 1,
+    "count": 139
+  },
+  {
+    "year": 2024,
+    "month": 2,
+    "count": 133
+  },
+  {
+    "year": 2024,
+    "month": 3,
+    "count": 145
+  },
+  {
+    "year": 2024,
+    "month": 4,
+    "count": 146
+  },
+  {
+    "year": 2024,
+    "month": 5,
+    "count": 147
+  },
+  {
+    "year": 2024,
+    "month": 6,
+    "count": 147
+  },
+  {
+    "year": 2024,
+    "month": 7,
+    "count": 145
+  },
+  {
+    "year": 2024,
+    "month": 8,
+    "count": 134
+  },
+  {
+    "year": 2024,
+    "month": 9,
+    "count": 154
+  },
+  {
+    "year": 2024,
+    "month": 10,
+    "count": 143
+  },
+  {
+    "year": 2024,
+    "month": 11,
+    "count": 135
+  },
+  {
+    "year": 2024,
+    "month": 12,
+    "count": 138
+  },
+  {
+    "year": 2025,
+    "month": 1,
+    "count": 147
+  },
+  {
+    "year": 2025,
+    "month": 2,
+    "count": 116
+  },
+  {
+    "year": 2025,
+    "month": 3,
+    "count": 138
+  },
+  {
+    "year": 2025,
+    "month": 4,
+    "count": 145
+  },
+  {
+    "year": 2025,
+    "month": 5,
+    "count": 164
+  },
+  {
+    "year": 2025,
+    "month": 6,
+    "count": 144
+  },
+  {
+    "year": 2025,
+    "month": 7,
+    "count": 144
+  }
+]
