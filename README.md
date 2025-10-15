@@ -8,11 +8,15 @@ An interactive website visualizing birth data across all 58 California counties 
 
 - **All 58 California Counties**: Individual pages for each county with dedicated visualizations
 - **Aggregate View**: Homepage showing total births across all counties
-- **Interactive Charts**: Monthly and annual birth trend visualizations using Chart.js
+- **Interactive Charts**: Multiple visualization types using Chart.js
+  - Monthly births trends over time
+  - Annual births by year
+  - Seasonality patterns (monthly averages by calendar month)
 - **Historical Data**: Birth statistics from 1960-2024
 - **Provisional Data**: Latest data for 2024-2025
 - **Responsive Design**: Works seamlessly on mobile and desktop
 - **Fast Navigation**: Client-side routing with React Router for instant page transitions
+- **User Feedback**: Built-in feedback button for user suggestions and bug reports
 - **Automated Deployment**: Updates automatically via GitHub Actions
 
 ## Project Structure
@@ -31,7 +35,9 @@ An interactive website visualizing birth data across all 58 California counties 
 │   ├── components/
 │   │   ├── CountyNav.jsx        # County navigation bar
 │   │   ├── MonthlyChart.jsx     # Monthly births chart component
-│   │   └── AnnualChart.jsx      # Annual births chart component
+│   │   ├── AnnualChart.jsx      # Annual births chart component
+│   │   ├── SeasonalityChart.jsx # Seasonality patterns chart component
+│   │   └── FeedbackButton.jsx   # User feedback button component
 │   ├── utils/
 │   │   └── dataLoader.js        # Data loading utilities
 │   └── styles/
@@ -138,8 +144,9 @@ This project uses a modern React architecture to minimize code duplication:
 
 - **Single CountyPage Component**: One reusable component handles all 58 counties dynamically
 - **Dynamic Routing**: URL pattern `/county/:countySlug` loads the appropriate county data
-- **Shared Chart Components**: MonthlyChart and AnnualChart are reused across all pages
+- **Shared Chart Components**: MonthlyChart, AnnualChart, and SeasonalityChart are reused across all pages
 - **Client-side Navigation**: React Router provides instant page transitions without full reloads
+- **User Engagement**: Integrated feedback mechanism for continuous improvement
 
 ## Future Enhancements
 
