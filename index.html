@@ -40,10 +40,31 @@
             font-size: 1rem;
         }
 
+        .chart-section {
+            margin-bottom: 3rem;
+        }
+
+        .chart-section:last-of-type {
+            margin-bottom: 0;
+        }
+
+        .section-title {
+            color: #333;
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .section-subtitle {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 1.5rem;
+        }
+
         .chart-container {
             position: relative;
             height: 500px;
-            margin-top: 2rem;
+            margin-bottom: 2rem;
         }
 
         .data-source {
@@ -86,11 +107,23 @@
 </head>
 <body>
     <div class="container">
-        <h1>San Francisco Births by Month</h1>
-        <p class="subtitle">Provisional data showing monthly birth counts (2024-2025)</p>
+        <h1>San Francisco Births Data</h1>
+        <p class="subtitle">Provisional and historical birth data from California Department of Public Health</p>
 
-        <div class="chart-container">
-            <canvas id="birthsChart"></canvas>
+        <div class="chart-section">
+            <h2 class="section-title">Monthly Births (2024-2025)</h2>
+            <p class="section-subtitle">Provisional data showing monthly birth counts</p>
+            <div class="chart-container">
+                <canvas id="monthlyChart"></canvas>
+            </div>
+        </div>
+
+        <div class="chart-section">
+            <h2 class="section-title">Annual Births (1960-2023)</h2>
+            <p class="section-subtitle">Historical data showing total births per year</p>
+            <div class="chart-container">
+                <canvas id="annualChart"></canvas>
+            </div>
         </div>
 
         <div class="data-source">
@@ -109,7 +142,7 @@
         fetch('public/data/sf-births.json')
             .then(response => response.json())
             .then(data => {
-                // Group data by year
+                // Group data by year and month
                 const dataByYear = {};
                 data.forEach(record => {
                     if (!dataByYear[record.year]) {
@@ -119,36 +152,34 @@
                     dataByYear[record.year][record.month - 1] = record.count;
                 });
 
-                // Create datasets for each year
-                const years = Object.keys(dataByYear).sort();
-                const colors = [
+                // ===== CHART 1: Monthly Births 2024-2025 =====
+                const monthlyColors = [
                     { border: 'rgb(102, 126, 234)', background: 'rgba(102, 126, 234, 0.1)' },
-                    { border: 'rgb(118, 75, 162)', background: 'rgba(118, 75, 162, 0.1)' },
-                    { border: 'rgb(237, 100, 166)', background: 'rgba(237, 100, 166, 0.1)' }
+                    { border: 'rgb(118, 75, 162)', background: 'rgba(118, 75, 162, 0.1)' }
                 ];
 
-                const datasets = years.map((year, index) => ({
+                const monthlyYears = ['2024', '2025'];
+                const monthlyDatasets = monthlyYears.map((year, index) => ({
                     label: year,
-                    data: dataByYear[year],
-                    borderColor: colors[index % colors.length].border,
-                    backgroundColor: colors[index % colors.length].background,
+                    data: dataByYear[year] || new Array(12).fill(null),
+                    borderColor: monthlyColors[index].border,
+                    backgroundColor: monthlyColors[index].background,
                     borderWidth: 3,
                     tension: 0.3,
                     fill: true,
                     pointRadius: 5,
                     pointHoverRadius: 7,
-                    pointBackgroundColor: colors[index % colors.length].border,
+                    pointBackgroundColor: monthlyColors[index].border,
                     pointBorderColor: '#fff',
                     pointBorderWidth: 2
                 }));
 
-                // Create the chart
-                const ctx = document.getElementById('birthsChart').getContext('2d');
-                new Chart(ctx, {
+                const monthlyCtx = document.getElementById('monthlyChart').getContext('2d');
+                new Chart(monthlyCtx, {
                     type: 'line',
                     data: {
                         labels: monthLabels,
-                        datasets: datasets
+                        datasets: monthlyDatasets
                     },
                     options: {
                         responsive: true,
@@ -230,11 +261,119 @@
                         }
                     }
                 });
+
+                // ===== CHART 2: Annual Births 1960-2023 =====
+                const annualData = [];
+                const years = Object.keys(dataByYear)
+                    .map(y => parseInt(y))
+                    .filter(y => y >= 1960 && y <= 2023)
+                    .sort((a, b) => a - b);
+
+                years.forEach(year => {
+                    const yearStr = year.toString();
+                    if (dataByYear[yearStr]) {
+                        const total = dataByYear[yearStr].reduce((sum, val) => {
+                            return sum + (val || 0);
+                        }, 0);
+                        annualData.push({ year, total });
+                    }
+                });
+
+                const annualCtx = document.getElementById('annualChart').getContext('2d');
+                new Chart(annualCtx, {
+                    type: 'line',
+                    data: {
+                        labels: annualData.map(d => d.year),
+                        datasets: [{
+                            label: 'Total Births',
+                            data: annualData.map(d => d.total),
+                            borderColor: 'rgb(102, 126, 234)',
+                            backgroundColor: 'rgba(102, 126, 234, 0.1)',
+                            borderWidth: 3,
+                            tension: 0.1,
+                            fill: true,
+                            pointRadius: 0,
+                            pointHoverRadius: 5,
+                            pointBackgroundColor: 'rgb(102, 126, 234)',
+                            pointBorderColor: '#fff',
+                            pointBorderWidth: 2
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        interaction: {
+                            mode: 'index',
+                            intersect: false
+                        },
+                        plugins: {
+                            legend: {
+                                display: false
+                            },
+                            tooltip: {
+                                backgroundColor: 'rgba(0, 0, 0, 0.8)',
+                                padding: 12,
+                                titleFont: {
+                                    size: 14,
+                                    weight: 'bold'
+                                },
+                                bodyFont: {
+                                    size: 13
+                                },
+                                callbacks: {
+                                    label: function(context) {
+                                        return `${context.parsed.y.toLocaleString()} births`;
+                                    }
+                                }
+                            }
+                        },
+                        scales: {
+                            x: {
+                                grid: {
+                                    display: false
+                                },
+                                ticks: {
+                                    font: {
+                                        size: 12,
+                                        weight: 'bold'
+                                    },
+                                    maxRotation: 45,
+                                    minRotation: 45,
+                                    autoSkip: true,
+                                    maxTicksLimit: 20
+                                }
+                            },
+                            y: {
+                                beginAtZero: false,
+                                grid: {
+                                    color: 'rgba(0, 0, 0, 0.05)'
+                                },
+                                ticks: {
+                                    font: {
+                                        size: 12
+                                    },
+                                    callback: function(value) {
+                                        return value.toLocaleString();
+                                    }
+                                },
+                                title: {
+                                    display: true,
+                                    text: 'Total Annual Births',
+                                    font: {
+                                        size: 14,
+                                        weight: 'bold'
+                                    }
+                                }
+                            }
+                        }
+                    }
+                });
             })
             .catch(error => {
                 console.error('Error loading birth data:', error);
-                document.querySelector('.chart-container').innerHTML =
-                    '<p style="color: red; text-align: center; padding: 2rem;">Error loading data. Please ensure the data file exists at public/data/sf-births.json</p>';
+                document.querySelectorAll('.chart-container').forEach(container => {
+                    container.innerHTML = '<p style="color: red; text-align: center; padding: 2rem;">Error loading data. Please ensure the data file exists at public/data/sf-births.json</p>';
+                });
             });
     </script>
 </body>
