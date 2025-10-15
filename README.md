@@ -50,7 +50,8 @@ An interactive website visualizing birth data across all 58 California counties 
 │   └── 404.html                 # SPA routing fallback
 ├── scripts/
 │   ├── process_births.py        # Data processing script
-│   └── generate-sitemap.js      # Sitemap generation script (automated)
+│   ├── generate-sitemap.js      # Sitemap generation script (automated)
+│   └── generate-social-image.py # Social sharing image generator (automated)
 ├── births-data/                 # Raw CSV data from CA Dept of Public Health
 ├── vite.config.js               # Vite configuration
 └── package.json                 # Dependencies
@@ -77,29 +78,37 @@ The site is automatically deployed to GitHub Pages via GitHub Actions whenever c
 
 The workflow will:
 1. Process the CSV data files using `process_births.py` to generate JSON for all 58 counties
-2. Install dependencies with pnpm
-3. Generate `sitemap.xml` from the counties data (automated)
-4. Build the React application with Vite
-5. Deploy the `dist/` folder to GitHub Pages
+2. Generate the social sharing image (`og-image.png`) with updated data
+3. Install dependencies with pnpm
+4. Generate `sitemap.xml` from the counties data (automated)
+5. Build the React application with Vite
+6. Deploy the `dist/` folder to GitHub Pages
 
 ## Running Locally
 
-1. Install dependencies:
+1. Set up Python virtual environment (one-time setup):
+   ```bash
+   python3 -m venv .venv
+   source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+   pip install matplotlib numpy
+   ```
+
+2. Install dependencies:
    ```bash
    pnpm install
    ```
 
-2. Process the data (if needed):
+3. Process the data (if needed):
    ```bash
    python3 scripts/process_births.py
    ```
 
-3. Start the development server:
+4. Start the development server:
    ```bash
    pnpm dev
    ```
 
-4. Open your browser to the URL shown (typically http://localhost:5173)
+5. Open your browser to the URL shown (typically http://localhost:5173)
 
 ## Building for Production
 
@@ -109,10 +118,14 @@ To create a production build:
 pnpm build
 ```
 
-This automatically generates the sitemap before building. You can also generate the sitemap separately:
+This automatically generates the sitemap before building. You can also run individual generation scripts:
 
 ```bash
+# Generate sitemap
 pnpm generate-sitemap
+
+# Generate social sharing image (requires Python with matplotlib and numpy)
+pnpm generate-social-image
 ```
 
 To preview the production build locally:
@@ -158,21 +171,21 @@ This project uses a modern React architecture to minimize code duplication:
 
 ## SEO & Discoverability
 
-The site is optimized for search engines with:
+The site is optimized for search engines and social sharing with:
 
 - **Automated Sitemap**: `sitemap.xml` is automatically generated from counties data during each build
+- **Social Sharing Image**: Custom Open Graph image with data visualization (1200x630px, auto-generated)
 - **Dynamic Meta Tags**: Page titles and descriptions update for each county
 - **Structured Data**: JSON-LD schema markup for Dataset type (helps search engines understand the content)
 - **Open Graph Tags**: Optimized sharing on Facebook, LinkedIn, and other social platforms
-- **Twitter Cards**: Enhanced appearance when shared on Twitter
+- **Twitter Cards**: Enhanced appearance when shared on Twitter with large image preview
 - **robots.txt**: Guides search engine crawlers
 
-The sitemap is regenerated automatically whenever:
-- You run `pnpm build` (local or CI/CD)
-- Counties data is updated
-- You explicitly run `pnpm generate-sitemap`
+The sitemap and social image are regenerated automatically whenever:
+- The GitHub Actions workflow runs (on push to main)
+- You run the generation scripts manually
 
-No manual updates needed!
+**Note:** The `generate-social-image` script requires the Python virtual environment to be set up (see Running Locally section above). The script uses `.venv/bin/python` to ensure consistent dependencies.
 
 ## Future Enhancements
 

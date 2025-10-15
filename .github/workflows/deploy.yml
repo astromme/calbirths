@@ -35,8 +35,14 @@ jobs:
         with:
           python-version: '3.x'
 
+      - name: Install Python dependencies
+        run: pip install matplotlib numpy
+
       - name: Process birth data
         run: python3 scripts/process_births.py
+
+      - name: Generate social sharing image
+        run: python3 scripts/generate-social-image.py
 
       - name: Install dependencies
         run: pnpm install
