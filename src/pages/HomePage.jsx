@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import CountyNav from '../components/CountyNav';
 import MonthlyChart from '../components/MonthlyChart';
+import SeasonalityChart from '../components/SeasonalityChart';
 import AnnualChart from '../components/AnnualChart';
 import FeedbackButton from '../components/FeedbackButton';
 import { loadAggregateData } from '../utils/dataLoader';
@@ -52,6 +53,7 @@ export default function HomePage() {
       </div>
 
       <MonthlyChart data={data} />
+      <SeasonalityChart data={data} />
       <AnnualChart data={data} />
 
       <div className="data-source">
