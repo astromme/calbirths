@@ -12,6 +12,13 @@ export default function HomePage() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
+    // Set page title and meta description
+    document.title = 'California Births Data - Historical & Provisional Birth Statistics (1960-2025)';
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute('content', 'Interactive visualization of California birth statistics from 1960-2025. Explore aggregate birth data across all 58 California counties with monthly trends, annual statistics, and seasonality patterns.');
+    }
+
     loadAggregateData()
       .then(data => {
         setData(data);
@@ -44,6 +51,30 @@ export default function HomePage() {
 
   return (
     <div className="container">
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Dataset",
+          "name": "California Births Data - Aggregate Statistics",
+          "description": "Aggregate provisional and historical birth data from California Department of Public Health covering all 58 California counties from 1960-2025",
+          "url": "https://astromme.github.io/calbirths/",
+          "keywords": ["California", "births", "vital statistics", "demographic data", "birth trends"],
+          "creator": {
+            "@type": "Organization",
+            "name": "California Department of Public Health",
+            "url": "https://data.chhs.ca.gov/"
+          },
+          "includedInDataCatalog": {
+            "@type": "DataCatalog",
+            "name": "California Health and Human Services Open Data Portal"
+          },
+          "temporalCoverage": "1960/2025",
+          "spatialCoverage": {
+            "@type": "Place",
+            "name": "California"
+          }
+        })}
+      </script>
       <div className="page-header">
         <div className="page-header-content">
           <h1>California Births Data</h1>

@@ -16,6 +16,13 @@ export default function CountyPage() {
   const countyName = slugToCountyName(countySlug);
 
   useEffect(() => {
+    // Set page title and meta description dynamically
+    document.title = `${countyName} County Births Data - California Birth Statistics (1960-2025)`;
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute('content', `Explore ${countyName} County birth statistics from 1960-2025. Interactive charts showing monthly trends, annual births, and seasonality patterns from California Department of Public Health.`);
+    }
+
     setLoading(true);
     setError(null);
 
@@ -29,7 +36,7 @@ export default function CountyPage() {
         setError(error.message);
         setLoading(false);
       });
-  }, [countySlug]);
+  }, [countySlug, countyName]);
 
   if (loading) {
     return (
@@ -52,6 +59,34 @@ export default function CountyPage() {
 
   return (
     <div className="container">
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Dataset",
+          "name": `${countyName} County Births Data`,
+          "description": `Provisional and historical birth data for ${countyName} County, California from 1960-2025`,
+          "url": `https://astromme.github.io/calbirths/county/${countySlug}`,
+          "keywords": [countyName, "California", "births", "vital statistics", "demographic data", "birth trends", "county data"],
+          "creator": {
+            "@type": "Organization",
+            "name": "California Department of Public Health",
+            "url": "https://data.chhs.ca.gov/"
+          },
+          "includedInDataCatalog": {
+            "@type": "DataCatalog",
+            "name": "California Health and Human Services Open Data Portal"
+          },
+          "temporalCoverage": "1960/2025",
+          "spatialCoverage": {
+            "@type": "Place",
+            "name": `${countyName} County, California`,
+            "containedInPlace": {
+              "@type": "Place",
+              "name": "California"
+            }
+          }
+        })}
+      </script>
       <div className="page-header">
         <div className="page-header-content">
           <h1>{countyName} Births Data</h1>
