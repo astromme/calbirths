@@ -5,7 +5,7 @@ export default function CountyNav({ currentCounty }) {
   const [counties, setCounties] = useState([]);
 
   useEffect(() => {
-    fetch('/calbirths/data/counties.json')
+    fetch(`${import.meta.env.BASE_URL}data/counties.json`)
       .then(response => response.json())
       .then(data => setCounties(data))
       .catch(error => console.error('Error loading counties:', error));
@@ -17,12 +17,12 @@ export default function CountyNav({ currentCounty }) {
 
   return (
     <div className="county-nav">
-      <Link to="/calbirths/">All Counties</Link>
+      <Link to={import.meta.env.BASE_URL}>All Counties</Link>
       <div className="county-list">
         {counties.map((county) => (
           <span key={county}>
             <Link
-              to={`/calbirths/county/${getCountySlug(county)}`}
+              to={`${import.meta.env.BASE_URL}county/${getCountySlug(county)}`}
               style={{ fontWeight: currentCounty === county ? 'bold' : 'normal' }}
             >
               {county}

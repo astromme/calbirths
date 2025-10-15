@@ -1,5 +1,5 @@
 export async function loadCountyData(countySlug) {
-  const response = await fetch(`/calbirths/data/${countySlug}-births.json`);
+  const response = await fetch(`${import.meta.env.BASE_URL}data/${countySlug}-births.json`);
   if (!response.ok) {
     throw new Error(`Failed to load data for ${countySlug}`);
   }
@@ -7,7 +7,7 @@ export async function loadCountyData(countySlug) {
 }
 
 export async function loadAggregateData() {
-  const response = await fetch('/calbirths/data/california-total-births.json');
+  const response = await fetch(`${import.meta.env.BASE_URL}data/california-total-births.json`);
   if (!response.ok) {
     throw new Error('Failed to load aggregate data');
   }

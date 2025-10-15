@@ -5,10 +5,10 @@ import './styles/App.css';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <Routes>
-        <Route path="/calbirths/" element={<HomePage />} />
-        <Route path="/calbirths/county/:countySlug" element={<CountyPage />} />
+        <Route path="/" element={<HomePage />} />
+        <Route path="/county/:countySlug" element={<CountyPage />} />
       </Routes>
     </BrowserRouter>
   );
