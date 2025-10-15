@@ -17,6 +17,7 @@ An interactive website visualizing birth data across all 58 California counties 
 - **Responsive Design**: Works seamlessly on mobile and desktop
 - **Fast Navigation**: Client-side routing with React Router for instant page transitions
 - **User Feedback**: Built-in feedback button for user suggestions and bug reports
+- **Analytics**: Google Analytics 4 integration for tracking page views and user engagement
 - **Automated Deployment**: Updates automatically via GitHub Actions
 
 ## Project Structure
@@ -28,7 +29,7 @@ An interactive website visualizing birth data across all 58 California counties 
 │       └── deploy.yml           # GitHub Actions deployment workflow
 ├── src/
 │   ├── main.jsx                 # Entry point
-│   ├── App.jsx                  # Main router
+│   ├── App.jsx                  # Main router with GA tracking
 │   ├── pages/
 │   │   ├── HomePage.jsx         # Aggregate view for all counties
 │   │   └── CountyPage.jsx       # Individual county view (reusable)
@@ -38,6 +39,8 @@ An interactive website visualizing birth data across all 58 California counties 
 │   │   ├── AnnualChart.jsx      # Annual births chart component
 │   │   ├── SeasonalityChart.jsx # Seasonality patterns chart component
 │   │   └── FeedbackButton.jsx   # User feedback button component
+│   ├── hooks/
+│   │   └── usePageTracking.js   # Google Analytics page tracking hook
 │   ├── utils/
 │   │   └── dataLoader.js        # Data loading utilities
 │   └── styles/
@@ -63,6 +66,7 @@ An interactive website visualizing birth data across all 58 California counties 
 - **Build Tool**: Vite
 - **Routing**: React Router
 - **Charting**: Chart.js + react-chartjs-2
+- **Analytics**: Google Analytics 4 (GA4)
 - **Package Manager**: pnpm
 - **Data Processing**: Python 3
 - **Hosting**: GitHub Pages
