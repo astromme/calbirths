@@ -78,8 +78,8 @@ def create_social_image(data_json_path, output_path):
     # Hide Y-axis labels and ticks
     ax.yaxis.set_visible(False)
 
-    # Add title at the top
-    title_y = 0.92
+    # Add title at the top with safe margin from edge
+    title_y = 0.88
 
     fig.text(0.5, title_y, 'California Births Data',
              ha='center', fontsize=32, color='#f1f5f9', fontweight='bold')
@@ -90,7 +90,7 @@ def create_social_image(data_json_path, output_path):
              fontweight='bold', alpha=0.85)
 
     # Save the image
-    plt.savefig(output_path, facecolor='#0f172a', dpi=DPI, bbox_inches='tight', pad_inches=0.1)
+    plt.savefig(output_path, facecolor='#0f172a', dpi=DPI, bbox_inches=None, pad_inches=0.3)
     plt.close()
 
     print(f"✓ Social sharing image created: {output_path}")
