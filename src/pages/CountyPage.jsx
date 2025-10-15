@@ -53,23 +53,24 @@ export default function CountyPage() {
       <h1>{countyName} Births Data</h1>
       <p className="subtitle">Provisional and historical birth data from California Department of Public Health</p>
 
-      <CountyNav currentCounty={countyName} />
-
       <MonthlyChart data={data} />
       <AnnualChart data={data} />
 
       <div className="data-source">
-        <strong>Data Source:</strong>{' '}
-        <a
-          href="https://data.chhs.ca.gov/dataset/live-birth-profiles-by-county"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          California Department of Public Health, Center for Health Statistics and Informatics, Vital Statistics Branch
-        </a>.
-        <br />
-        <strong>Note:</strong> Provisional counts are based on records available as of August 2025 and may not represent all births that occurred during the time period.
-        Counts include births that occurred in {countyName} regardless of residence.
+        <div className="data-source-text">
+          <strong>Data Source:</strong>{' '}
+          <a
+            href="https://data.chhs.ca.gov/dataset/live-birth-profiles-by-county"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            California Department of Public Health, Center for Health Statistics and Informatics, Vital Statistics Branch
+          </a>.
+          <br />
+          <strong>Note:</strong> Provisional counts are based on records available as of August 2025 and may not represent all births that occurred during the time period.
+          Counts include births that occurred in {countyName} regardless of residence.
+        </div>
+        <CountyNav currentCounty={countyName} />
       </div>
     </div>
   );

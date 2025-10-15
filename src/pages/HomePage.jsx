@@ -45,23 +45,24 @@ export default function HomePage() {
       <h1>California Births Data</h1>
       <p className="subtitle">Aggregate provisional and historical birth data from California Department of Public Health</p>
 
-      <CountyNav currentCounty={null} />
-
       <MonthlyChart data={data} />
       <AnnualChart data={data} />
 
       <div className="data-source">
-        <strong>Data Source:</strong>{' '}
-        <a
-          href="https://data.chhs.ca.gov/dataset/live-birth-profiles-by-county"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          California Department of Public Health, Center for Health Statistics and Informatics, Vital Statistics Branch
-        </a>.
-        <br />
-        <strong>Note:</strong> Provisional counts are based on records available as of August 2025 and may not represent all births that occurred during the time period.
-        This aggregate view shows total births across all California counties.
+        <div className="data-source-text">
+          <strong>Data Source:</strong>{' '}
+          <a
+            href="https://data.chhs.ca.gov/dataset/live-birth-profiles-by-county"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            California Department of Public Health, Center for Health Statistics and Informatics, Vital Statistics Branch
+          </a>.
+          <br />
+          <strong>Note:</strong> Provisional counts are based on records available as of August 2025 and may not represent all births that occurred during the time period.
+          This aggregate view shows total births across all California counties.
+        </div>
+        <CountyNav currentCounty={null} />
       </div>
     </div>
   );

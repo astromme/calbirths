@@ -18,17 +18,18 @@ export default function CountyNav({ currentCounty }) {
   return (
     <div className="county-nav">
       <Link to="/calbirths/">All Counties</Link>
-      {counties.map((county, index) => (
-        <span key={county}>
-          <span className="separator">|</span>
-          <Link
-            to={`/calbirths/county/${getCountySlug(county)}`}
-            style={{ fontWeight: currentCounty === county ? 'bold' : 'normal' }}
-          >
-            {county}
-          </Link>
-        </span>
-      ))}
+      <div className="county-list">
+        {counties.map((county) => (
+          <span key={county}>
+            <Link
+              to={`/calbirths/county/${getCountySlug(county)}`}
+              style={{ fontWeight: currentCounty === county ? 'bold' : 'normal' }}
+            >
+              {county}
+            </Link>
+          </span>
+        ))}
+      </div>
     </div>
   );
 }
