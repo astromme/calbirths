@@ -24,6 +24,9 @@ ChartJS.register(
 
 const monthLabels = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 
+// Typical days in each month (using 28.25 for February to account for leap years)
+const daysInMonth = [31, 28.25, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+
 export default function SeasonalityChart({ data }) {
   // Calculate average births per month across all years (1960-2024)
   const monthlyTotals = new Array(12).fill(0);
@@ -43,10 +46,13 @@ export default function SeasonalityChart({ data }) {
     monthlyYearCounts[index] > 0 ? total / monthlyYearCounts[index] : 0
   );
 
-  // Calculate total average births per year and convert to percentages
-  const totalAveragePerYear = monthlyAverages.reduce((sum, avg) => sum + avg, 0);
-  const monthlyPercentages = monthlyAverages.map(avg =>
-    totalAveragePerYear > 0 ? (avg / totalAveragePerYear) * 100 : 0
+  // Normalize by days in month to get average daily births
+  const dailyAverages = monthlyAverages.map((avg, index) => avg / daysInMonth[index]);
+
+  // Calculate total average daily births and convert to percentages
+  const totalDailyAverage = dailyAverages.reduce((sum, avg) => sum + avg, 0);
+  const monthlyPercentages = dailyAverages.map(avg =>
+    totalDailyAverage > 0 ? (avg / totalDailyAverage) * 12 * 100 : 0
   );
 
   const chartData = {
@@ -94,9 +100,11 @@ export default function SeasonalityChart({ data }) {
             const monthIndex = context.dataIndex;
             const yearCount = monthlyYearCounts[monthIndex];
             const avgBirths = monthlyAverages[monthIndex];
+            const dailyAvg = dailyAverages[monthIndex];
             return [
               `Percentage: ${percentage.toFixed(2)}%`,
-              `Average: ${Math.round(avgBirths).toLocaleString()} births`,
+              `Avg daily births: ${Math.round(dailyAvg).toLocaleString()}`,
+              `Avg monthly births: ${Math.round(avgBirths).toLocaleString()}`,
               `Based on ${yearCount} years (1960-2024)`
             ];
           }
@@ -143,7 +151,7 @@ export default function SeasonalityChart({ data }) {
   return (
     <div className="chart-section">
       <h2 className="section-title">Birth Seasonality (1960-2024)</h2>
-      <p className="section-subtitle">Percentage of annual births by month</p>
+      <p className="section-subtitle">Percentage of annual births by month (normalized for days in month)</p>
       <div className="chart-container">
         <Line data={chartData} options={options} />
       </div>

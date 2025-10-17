@@ -29,14 +29,26 @@ const monthlyColors = [
   { border: 'rgb(118, 75, 162)', background: 'rgba(118, 75, 162, 0.1)' }
 ];
 
+// Helper function to get days in a month
+function getDaysInMonth(year, month) {
+  return new Date(year, month, 0).getDate();
+}
+
 export default function MonthlyChart({ data }) {
-  // Group data by year and month
+  // Group data by year and month, storing both raw count and normalized value
   const dataByYear = {};
+  const rawDataByYear = {};
+
   data.forEach(record => {
     if (!dataByYear[record.year]) {
       dataByYear[record.year] = new Array(12).fill(null);
+      rawDataByYear[record.year] = new Array(12).fill(null);
     }
-    dataByYear[record.year][record.month - 1] = record.count;
+    const monthIndex = record.month - 1;
+    const daysInMonth = getDaysInMonth(record.year, record.month);
+
+    rawDataByYear[record.year][monthIndex] = record.count;
+    dataByYear[record.year][monthIndex] = record.count / daysInMonth;
   });
 
   // Get the latest two years for the chart
@@ -99,7 +111,13 @@ export default function MonthlyChart({ data }) {
             if (value === null) {
               return `${context.dataset.label}: No data`;
             }
-            return `${context.dataset.label}: ${value.toLocaleString()} births`;
+            const year = parseInt(context.dataset.label);
+            const monthIndex = context.dataIndex;
+            const rawValue = rawDataByYear[year][monthIndex];
+            return [
+              `${context.dataset.label}: ${Math.round(value).toLocaleString()} births/day`,
+              `Total: ${rawValue.toLocaleString()} births`
+            ];
           }
         }
       }
@@ -131,7 +149,7 @@ export default function MonthlyChart({ data }) {
         },
         title: {
           display: true,
-          text: 'Number of Births',
+          text: 'Average Births per Day',
           font: {
             size: 14,
             weight: 'bold'
@@ -144,7 +162,7 @@ export default function MonthlyChart({ data }) {
   return (
     <div className="chart-section">
       <h2 className="section-title">Monthly Births ({displayYears.join('-')})</h2>
-      <p className="section-subtitle">Provisional data showing monthly birth counts</p>
+      <p className="section-subtitle">Average daily births (normalized for days in month)</p>
       <div className="chart-container">
         <Line data={chartData} options={options} />
       </div>
