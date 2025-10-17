@@ -49,17 +49,19 @@ export default function SeasonalityChart({ data }) {
   // Normalize by days in month to get average daily births
   const dailyAverages = monthlyAverages.map((avg, index) => avg / daysInMonth[index]);
 
-  // Calculate total average daily births and convert to percentages
-  const totalDailyAverage = dailyAverages.reduce((sum, avg) => sum + avg, 0);
-  const monthlyPercentages = dailyAverages.map(avg =>
-    totalDailyAverage > 0 ? (avg / totalDailyAverage) * 12 * 100 : 0
+  // Calculate overall average daily birth rate across all months
+  const overallDailyAverage = dailyAverages.reduce((sum, avg) => sum + avg, 0) / 12;
+
+  // Express each month as a percentage relative to the overall average (100% = average)
+  const relativeRates = dailyAverages.map(avg =>
+    overallDailyAverage > 0 ? (avg / overallDailyAverage) * 100 : 0
   );
 
   const chartData = {
     labels: monthLabels,
     datasets: [{
-      label: 'Percent of Annual Births',
-      data: monthlyPercentages,
+      label: 'Relative Daily Birth Rate',
+      data: relativeRates,
       borderColor: 'rgb(118, 75, 162)',
       backgroundColor: 'rgba(118, 75, 162, 0.1)',
       borderWidth: 3,
@@ -96,13 +98,13 @@ export default function SeasonalityChart({ data }) {
         },
         callbacks: {
           label: function(context) {
-            const percentage = context.parsed.y;
+            const relativeRate = context.parsed.y;
             const monthIndex = context.dataIndex;
             const yearCount = monthlyYearCounts[monthIndex];
             const avgBirths = monthlyAverages[monthIndex];
             const dailyAvg = dailyAverages[monthIndex];
             return [
-              `Percentage: ${percentage.toFixed(2)}%`,
+              `Relative rate: ${relativeRate.toFixed(1)}% of average`,
               `Avg daily births: ${Math.round(dailyAvg).toLocaleString()}`,
               `Avg monthly births: ${Math.round(avgBirths).toLocaleString()}`,
               `Based on ${yearCount} years (1960-2024)`
@@ -138,7 +140,7 @@ export default function SeasonalityChart({ data }) {
         },
         title: {
           display: true,
-          text: 'Percent of Annual Births',
+          text: 'Relative Daily Birth Rate (100% = average)',
           font: {
             size: 14,
             weight: 'bold'
@@ -151,7 +153,7 @@ export default function SeasonalityChart({ data }) {
   return (
     <div className="chart-section">
       <h2 className="section-title">Birth Seasonality (1960-2024)</h2>
-      <p className="section-subtitle">Percentage of annual births by month (normalized for days in month)</p>
+      <p className="section-subtitle">Daily birth rate relative to yearly average (normalized for days in month)</p>
       <div className="chart-container">
         <Line data={chartData} options={options} />
       </div>
